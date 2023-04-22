@@ -60,13 +60,13 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/DistributingStation.mp4"/>
 						</MODEL>
 					</NODE-->
-					
+
 					<NODE view="Station" tx="150" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="movie.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:StationVideo"/>
 						</MODEL>
 						<NODE view="StationVideo" rx="-90" sx="0.3" sy="0.3" sz="0.3">
-							<DISPLAY text="@video:https://mariolufl.github.io/FestoPrueba/Distributing/SensorInductive.mp4"/>
+							<DISPLAY text="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/DistributingStation.mp4"/>
 							<NODE view="StationVideo" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
 								<MODEL file="plane.obj" texture="back.png">
 									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Station"/>
