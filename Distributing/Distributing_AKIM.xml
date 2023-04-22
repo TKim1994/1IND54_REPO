@@ -56,7 +56,7 @@
 					<NODE view="Station" tx="150" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="movie.png">
 							<!--LINK w="0.1" h="0.1" xd="0.1" refer="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/DistributingStation.mp4"/-->
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor0"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Station"/>
 						</MODEL>
 
 
