@@ -52,9 +52,23 @@
 						</MODEL>			
 					</NODE>			
 					<NODE view="Station" tx="150" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="movie.png">
+
+
+						<NODE view="Sensor0Video" rx="-90" sx="0.3" sy="0.3" sz="0.3">
+							<DISPLAY text="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/DistributingStation.mp4"/> <!--http://festodidacticsw.azurewebsites.net/ar/mps/DiffuseSensor.mp4-->
+							<NODE view="Sensor0Video" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
+								<MODEL file="plane.obj" texture="back.png">
+									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor0"/>
+								</MODEL>
+							</NODE>
+						</NODE>
+
+
+						<!--MODEL file="plane.obj" texture="movie.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/DistributingStation.mp4"/>
-						</MODEL>
+						</MODEL-->
+
+
 					</NODE>
 				</NODE>			
 			</NODE>
