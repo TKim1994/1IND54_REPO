@@ -596,7 +596,7 @@
 				</NODE>
 				<NODE view="Actuators">
 					<LINK w="250" h="50" d="40" refer="@view:Actuator0"/>
-					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
+					<NODE view="Actuators" tz="21" rx="200" sx="5" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
