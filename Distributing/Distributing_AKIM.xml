@@ -595,13 +595,13 @@
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="80" h="50" d="40" refer="@view:Actuator0"/>
+					<LINK w="80" h="50" d="200" refer="@view:Actuator0"/>
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Actuator0">
-					<LINK w="80" h="50" d="40" refer="@view:Actuators"/>
+					<LINK w="80" h="50" d="200" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
 			<NODE view="Actuator0" tx="-60" tz="35" rx="135">
