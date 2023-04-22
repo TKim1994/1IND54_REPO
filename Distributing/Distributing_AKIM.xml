@@ -581,6 +581,13 @@
 			</NODE>			
 		</NODE>
 
+
+
+
+
+
+
+
         <!--NODE view="Actuator0" tx="-0" ty="-220" tz="30"-->
 		<NODE view="Actuator0" tx="-0" ty="-220" tz="30">
 			<NODE view="Actuators,Actuator0" ty="40" tz="-30">
@@ -589,7 +596,7 @@
 				</NODE>
 				<NODE view="Actuators">
 					<LINK w="250" h="50" d="40" refer="@view:Actuator0"/>
-					<NODE view="Actuators" tz="21" rx="180" sx="4" sy="10" sz="10">
+					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
@@ -615,6 +622,21 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <NODE view="Actuator1" tx="-65" ty="-150" tz="30">
 			<NODE view="Actuators,Actuator1" ty="40" tz="-30">
