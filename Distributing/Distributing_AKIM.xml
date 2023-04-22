@@ -754,7 +754,7 @@
 
 
 
-        <NODE view="Actuator4" tx="-150" ty="-190" tz="30">
+        <NODE view="Actuator4" tx="-150" ty="-250" tz="30">
 			<NODE view="Actuators,Actuator4" ty="40" tz="-30">
 				<NODE view="Actuator4" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
