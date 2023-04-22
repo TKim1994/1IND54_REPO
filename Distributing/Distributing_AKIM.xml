@@ -2,7 +2,7 @@
 
 <AUGMENTATION targetbase="Marker" views="Station,Sensors,Actuators,Sensor0,Sensor1,Sensor2,RFID,Sensor3,Sensor4,Sensor5,Sensor6,Actuator0,Actuator1,Actuator2,Actuator3,Actuator4,Sensor0Video,Sensor1Video,Sensor2Video,Sensor3Video,Sensor4Video,Sensor5Video,Sensor6Video,Modules,ModuleConveyor,ModuleConveyorDetails,ModuleConveyorVideo,ModuleStackMagazine,ModuleDetection,StationVideo,ModuleStackMagazineVideo,ModuleStackMagazineDetails,SetupStep1,SetupStep2,SetupStep3,SetupStep4,SetupStep5" >
 
-    <TARGET marker="Marker_MPSDistributionConveyorStation">
+    <TARGET marker="Marker_MPSSortingStation">
 
 		<NODE sx="70" sy="70" sz="70" rx="90">
 			<MODEL file="menucube.obj" texture="menucube.png">
