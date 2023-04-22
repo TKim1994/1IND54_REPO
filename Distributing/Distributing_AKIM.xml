@@ -659,10 +659,10 @@
 					</NODE>
 				</NODE>
 				<NODE view="Actuator2">
-					<LINK w="80" h="50" d="200" refer="@view:Actuators"/>
+					<LINK w="80" h="50" d="100" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
-			<NODE view="Actuator2" tx="25" tz="30" rx="135">
+			<NODE view="Actuator2" tx="25" tz="60" rx="135">
 				<NODE view="Actuator2" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" _3M1,_3M2: Actuador Giratorio " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
