@@ -2,7 +2,7 @@
 
 <AUGMENTATION targetbase="Marker" views="Station,Sensors,Actuators,Sensor0,Sensor1,Sensor2,RFID,Sensor3,Sensor4,Sensor5,Sensor6,Actuator0,Actuator1,Actuator2,Actuator3,Actuator4,Sensor0Video,Sensor1Video,Sensor2Video,Sensor3Video,Sensor4Video,Sensor5Video,Sensor6Video,Modules,ModuleConveyor,ModuleConveyorDetails,ModuleConveyorVideo,ModuleStackMagazine,ModuleDetection,StationVideo,ModuleStackMagazineVideo,ModuleStackMagazineDetails,SetupStep1,SetupStep2,SetupStep3,SetupStep4,SetupStep5" >
 
-    <TARGET marker="Marker_MPSDistributingStation">
+    <TARGET marker="Marker_MPSDistributionConveyorStation">
 
 		<NODE sx="70" sy="70" sz="70" rx="90">
 			<MODEL file="menucube.obj" texture="menucube.png">
@@ -33,12 +33,12 @@
 				<NODE view="Station" ty="-36">
 					<NODE view="Station" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="IPLogo.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/MPS/DistributingStation/EN/index.html"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/DistributionConveyorStation/EN/index.html"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Station" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="3DLogo.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/MPS/DistributingStation/EN/3DAnimation.html"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/MPS/DistributionConveyorStation/EN/3DAnimation.html"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Station" tx="80" sx="15" sy="15" sz="15">
@@ -785,7 +785,7 @@
 					</NODE>			
 					<NODE view="ModuleDetection" tx="80" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="movie.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/MPS/DistributingStation/EN/VideoSimulation.html"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/MPS/DistributionConveyorStation/EN/VideoSimulation.html"/>
 						</MODEL>
 					</NODE>
 				</NODE>			
