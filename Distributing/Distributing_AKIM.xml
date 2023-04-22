@@ -672,7 +672,7 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
 					</NODE>
-					<NODE view="Actuator2" tx="187.86" sx="15" sy="15" sz="15">
+					<NODE view="Actuator2" tx="87.86" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="pdf.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/374134.pdf"/>
 						</MODEL>
