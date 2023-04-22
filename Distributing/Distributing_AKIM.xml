@@ -564,7 +564,47 @@
 
 
 		<!-- ======================================== CILINDRO DOBLE EFECTO ======================================== -->
-        <NODE view="Actuator1" tx="-85" ty="-160" tz="30">
+        <NODE view="Actuator0" tx="-85" ty="-160" tz="30">
+			<NODE view="Actuators,Actuator0" ty="40" tz="-30">
+				<NODE view="Actuator0" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
+					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+				</NODE>
+				<NODE view="Actuators">
+					<LINK w="50" h="50" d="40" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
+						<MODEL file="plane.obj" texture="about.png"/>
+					</NODE>
+				</NODE>
+				<NODE view="Actuator0">
+					<LINK w="50" h="50" d="40" refer="@view:Actuators"/>
+				</NODE>
+			</NODE>
+			<NODE view="Actuator0" tx="25" tz="30" rx="135">
+				<NODE view="Actuator0" tx="-2.6" sx="4" sy="4" sz="4">
+					<TEXT label=" _1M1: Cilindro Neumatico de Doble Efecto " rgba="0091DCff" backrgba="ffffffff"/>
+				</NODE>
+				<NODE view="Actuator0" ty="-45">
+					<NODE view="Actuator0" tx="31.43" sx="36.43" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="ControllerQ0.0.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
+						</MODEL>
+					</NODE>			
+					<NODE view="Actuator0" tx="87.86" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="pdf.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/665109.pdf"/>
+						</MODEL>			
+					</NODE>			
+				</NODE>			
+			</NODE>			
+		</NODE>
+
+
+
+
+		
+
+		<!-- ======================================== TOBERA DE ASPIRACION- Y INYECCION DE AIRE ======================================== -->
+        <NODE view="Actuator1" tx="150" ty="-190" tz="90">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator1" ty="40" tz="-30">
 				<NODE view="Actuator1" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
@@ -581,55 +621,15 @@
 			</NODE>
 			<NODE view="Actuator1" tx="25" tz="30" rx="135">
 				<NODE view="Actuator1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _1M1: Cilindro Neumatico de Doble Efecto " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" _2M1: Tobera de Aspiracion y _2M2: Inyeccion de Aire " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator1" ty="-45">
 					<NODE view="Actuator1" tx="31.43" sx="36.43" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerQ0.0.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
-						</MODEL>
-					</NODE>			
-					<NODE view="Actuator1" tx="87.86" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="pdf.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/665109.pdf"/>
-						</MODEL>			
-					</NODE>			
-				</NODE>			
-			</NODE>			
-		</NODE>
-
-
-
-
-		
-
-		<!-- ======================================== TOBERA DE ASPIRACION- Y INYECCION DE AIRE ======================================== -->
-        <NODE view="Actuator0" tx="150" ty="-190" tz="90">  <!--Posicion general del parelelepipedo celeste-->
-			<NODE view="Actuators,Actuator2" ty="40" tz="-30">
-				<NODE view="Actuator2" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
-					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
-				</NODE>
-				<NODE view="Actuators">
-					<LINK w="50" h="50" d="40" refer="@view:Actuator2"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
-					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
-						<MODEL file="plane.obj" texture="about.png"/>
-					</NODE>
-				</NODE>
-				<NODE view="Actuator2">
-					<LINK w="50" h="50" d="40" refer="@view:Actuators"/>
-				</NODE>
-			</NODE>
-			<NODE view="Actuator2" tx="25" tz="30" rx="135">
-				<NODE view="Actuator2" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _2M1: Tobera de Aspiracion y _2M2: Inyeccion de Aire " rgba="0091DCff" backrgba="ffffffff"/>
-				</NODE>
-				<NODE view="Actuator2" ty="-45">
-					<NODE view="Actuator2" tx="31.43" sx="36.43" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="ControllerQ0.1_2.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
 					</NODE>			
-					<NODE view="Actuator2" tx="87.86" sx="15" sy="15" sz="15">
+					<NODE view="Actuator1" tx="87.86" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="pdf.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/665109.pdf"/>
 						</MODEL>			
@@ -647,32 +647,32 @@
 
 
 		<!-- ======================================== ACTUADOR GIRATORIO ======================================== -->
-		<NODE view="Actuator0" tx="100" ty="-220" tz="30">  <!--Posicion general del parelelepipedo celeste-->
-			<NODE view="Actuators,Actuator0" ty="40" tz="-30">
-				<NODE view="Actuator0" tx="80" ry="-90" sx="4" sy="4" sz="4">
+		<NODE view="Actuator2" tx="100" ty="-220" tz="30">  <!--Posicion general del parelelepipedo celeste-->
+			<NODE view="Actuators,Actuator2" ty="40" tz="-30">
+				<NODE view="Actuator2" tx="80" ry="-90" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="80" h="50" d="100" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<LINK w="80" h="50" d="100" refer="@view:Actuator2"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10"> <!--Posicion del (i)-->
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
-				<NODE view="Actuator0">
+				<NODE view="Actuator2">
 					<LINK w="80" h="50" d="200" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
-			<NODE view="Actuator0" tx="-60" tz="35" rx="135">
-				<NODE view="Actuator0" tx="-2.6" sx="4" sy="4" sz="4">
+			<NODE view="Actuator2" tx="-60" tz="35" rx="135">
+				<NODE view="Actuator2" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" _3M1,_3M2: Actuador Giratorio " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
-				<NODE view="Actuator0" ty="-45">
+				<NODE view="Actuator2" ty="-45">
 					<NODE view="Actuator2" tx="31.43" sx="36.43" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="ControllerQ0.3_4.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
 					</NODE>			
-					<NODE view="Actuator0" tx="62.86" sx="36.43" sy="15" sz="15">
+					<NODE view="Actuator2" tx="62.86" sx="36.43" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="pdf.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/374134.pdf"/>
 						</MODEL>			
