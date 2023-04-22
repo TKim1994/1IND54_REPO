@@ -677,7 +677,7 @@
 
 
 
-        <NODE view="Actuator2" tx="15" ty="-150" tz="30">
+        <NODE view="Actuator0" tx="100" ty="-220" tz="90">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator2" ty="40" tz="-30">
 				<NODE view="Actuator2" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
@@ -712,81 +712,6 @@
 		</NODE>
 
 
-
-
-
-        <NODE view="Actuator3" tx="-150" ty="-190" tz="30">
-			<NODE view="Actuators,Actuator3" ty="40" tz="-30">
-				<NODE view="Actuator3" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
-					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
-				</NODE>
-				<NODE view="Actuators">
-					<LINK w="40" h="80" d="30" refer="@view:Actuator3"/>
-					<NODE view="Actuators" tz="16" rx="180" sx="10" sy="10" sz="10">
-						<MODEL file="plane.obj" texture="about.png"/>
-					</NODE>
-				</NODE>
-				<NODE view="Actuator3">
-					<LINK w="40" h="80" d="30" refer="@view:Actuators"/>
-				</NODE>
-			</NODE>
-			<NODE view="Actuator3" tx="25" tz="30" rx="135">
-				<NODE view="Actuator3" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Electroválvula de Actuador Giratorio " rgba="0091DCff" backrgba="ffffffff"/>
-				</NODE>
-				<NODE view="Actuator3" ty="-45">
-					<NODE view="Actuator3" tx="31.43" sx="36.43" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerQ0.3.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
-						</MODEL>
-					</NODE>			
-					<NODE view="Actuator3" tx="87.86" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="pdf.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/188083.pdf"/>
-						</MODEL>			
-					</NODE>			
-				</NODE>			
-			</NODE>			
-		</NODE>
-
-
-
-
-
-
-        <NODE view="Actuator4" tx="-150" ty="-250" tz="30">
-			<NODE view="Actuators,Actuator4" ty="40" tz="-30">
-				<NODE view="Actuator4" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
-					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
-				</NODE>
-				<NODE view="Actuators">
-					<LINK w="40" h="80" d="30" refer="@view:Actuator4"/>
-					<NODE view="Actuators" tz="16" rx="180" sx="10" sy="10" sz="10">
-						<MODEL file="plane.obj" texture="about.png"/>
-					</NODE>
-				</NODE>
-				<NODE view="Actuator4">
-					<LINK w="40" h="80" d="30" refer="@view:Actuators"/>
-				</NODE>
-			</NODE>
-			<NODE view="Actuator4" tx="25" tz="30" rx="135">
-				<NODE view="Actuator4" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Electroválvula de Cilindro Neumático " rgba="0091DCff" backrgba="ffffffff"/>
-				</NODE>
-				<NODE view="Actuator4" ty="-45">
-					<NODE view="Actuator4" tx="31.43" sx="36.43" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerQ0.3.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
-						</MODEL>
-					</NODE>			
-					<NODE view="Actuator4" tx="87.86" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="pdf.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/188083.pdf"/>
-						</MODEL>			
-					</NODE>			
-				</NODE>			
-			</NODE>			
-		</NODE>
 
 
 
