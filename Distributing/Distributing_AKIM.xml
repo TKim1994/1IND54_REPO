@@ -727,7 +727,7 @@
 					<TEXT label=" Actuador Giratorio " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator0" ty="-45">
-					<NODE view="Actuator0" tx="31.43" sx="72.86" sy="15" sz="15">
+					<NODE view="Actuator0" tx="62.86" sx="36.43" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="ControllerQ0.3_4.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
