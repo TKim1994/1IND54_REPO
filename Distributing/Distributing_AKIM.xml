@@ -50,11 +50,13 @@
 						<MODEL file="plane.obj" texture="Manual.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/DataSheets/INT/648811_esfr_v2.0_Distribucion_Distribution_C_H5.pdf"/>
 						</MODEL>			
-					</NODE>			
-					<NODE view="Station" tx="150" sx="15" sy="15" sz="15">
+					</NODE>
 
+					<DISPLAY text="@video:https://mariolufl.github.io/FestoPrueba/Distributing/SensorInductive.mp4"/>
+					<NODE view="Station" tx="150" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="movie.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/DistributingStation.mp4"/>
+							<!--LINK w="0.1" h="0.1" xd="0.1" refer="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/DistributingStation.mp4"/-->
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor0"/>
 						</MODEL>
 
 
