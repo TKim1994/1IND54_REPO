@@ -58,7 +58,7 @@
 					</NODE>
 				</NODE>			
 			</NODE>			
-		</NODE>ss
+		</NODE>
 
         <NODE view="SetupStep1" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep1" tx="-50" tz="30" rx="135">
