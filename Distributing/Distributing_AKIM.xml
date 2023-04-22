@@ -582,7 +582,7 @@
 		</NODE>
 
         <!--NODE view="Actuator0" tx="-0" ty="-220" tz="30"-->
-		<NODE view="Actuator0" tx="-50" ty="-220" tz="30">
+		<NODE view="Actuator0" tx="-0" ty="-220" tz="30">
 			<NODE view="Actuators,Actuator0" ty="40" tz="-30">
 				<NODE view="Actuator0" tx="80" ry="-90" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
