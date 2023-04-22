@@ -598,7 +598,7 @@
 			</NODE>
 			<NODE view="Actuator0" tx="-60" tz="35" rx="135">
 				<NODE view="Actuator0" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Conveyor forward " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" Conveyor forwarddddd " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator0" ty="-45">
 					<NODE view="Actuator0" tx="31.43" sx="36.43" sy="15" sz="15">
