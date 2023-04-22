@@ -272,7 +272,8 @@
 			</NODE>			
 		</NODE>
 		
-		<!--Sensor de proximidad 1B1-->
+		
+		<!-- ======================================== SENSOR CILINDRO EXTENDIDO ======================================== -->
         <NODE view="Sensor1" tx="-65" ty="-150" tz="20">
 			<NODE view="Sensors,Sensor1" ty="40" tz="-30">
 				<NODE view="Sensors">
@@ -605,7 +606,7 @@
 			</NODE>
 			<NODE view="Actuator1" tx="25" tz="30" rx="135">
 				<NODE view="Actuator1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Cilindro Neumatico de Doble Efecto " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" _1M1: Cilindro Neumatico de Doble Efecto " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator1" ty="-45">
 					<NODE view="Actuator1" tx="31.43" sx="36.43" sy="15" sz="15">
@@ -645,7 +646,7 @@
 			</NODE>
 			<NODE view="Actuator2" tx="25" tz="30" rx="135">
 				<NODE view="Actuator2" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Tobera de Aspiracion y Inyeccion de Aire " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" _2M1: Tobera de Aspiracion y _2M2: Inyeccion de Aire " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator2" ty="-45">
 					<NODE view="Actuator2" tx="31.43" sx="36.43" sy="15" sz="15">
@@ -688,7 +689,7 @@
 			</NODE>
 			<NODE view="Actuator0" tx="-60" tz="35" rx="135">
 				<NODE view="Actuator0" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Actuador Giratorio " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" _3M1,_3M2: Actuador Giratorio " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator0" ty="-45">
 					<NODE view="Actuator0" tx="62.86" sx="36.43" sy="15" sz="15">
