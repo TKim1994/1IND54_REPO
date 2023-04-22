@@ -654,7 +654,7 @@
 			</NODE>
 			<NODE view="Actuator1" tx="25" tz="30" rx="135">
 				<NODE view="Actuator1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Extend deflector 1 " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" Cilindro Neumatico de Doble Efecto " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator1" ty="-45">
 					<NODE view="Actuator1" tx="31.43" sx="36.43" sy="15" sz="15">
@@ -670,6 +670,12 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
+
+
+
+
+
+
 
         <NODE view="Actuator2" tx="15" ty="-150" tz="30">
 			<NODE view="Actuators,Actuator2" ty="40" tz="-30">
@@ -688,7 +694,7 @@
 			</NODE>
 			<NODE view="Actuator2" tx="25" tz="30" rx="135">
 				<NODE view="Actuator2" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Extend deflector 2 " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" Tobera de aspiración " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator2" ty="-45">
 					<NODE view="Actuator2" tx="31.43" sx="36.43" sy="15" sz="15">
@@ -704,6 +710,10 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
+
+
+
+
 
         <NODE view="Actuator3" tx="-150" ty="-190" tz="30">
 			<NODE view="Actuators,Actuator3" ty="40" tz="-30">
@@ -722,7 +732,7 @@
 			</NODE>
 			<NODE view="Actuator3" tx="25" tz="30" rx="135">
 				<NODE view="Actuator3" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Retract stopper " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" Electroválvula de Actuador Giratorio " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator3" ty="-45">
 					<NODE view="Actuator3" tx="31.43" sx="36.43" sy="15" sz="15">
@@ -738,6 +748,11 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
+
+
+
+
+
 
         <NODE view="Actuator4" tx="-150" ty="-190" tz="30">
 			<NODE view="Actuators,Actuator4" ty="40" tz="-30">
@@ -756,7 +771,7 @@
 			</NODE>
 			<NODE view="Actuator4" tx="25" tz="30" rx="135">
 				<NODE view="Actuator4" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" Retract stopper " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" Electroválvula de Cilindro Neumático " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator4" ty="-45">
 					<NODE view="Actuator4" tx="31.43" sx="36.43" sy="15" sz="15">
