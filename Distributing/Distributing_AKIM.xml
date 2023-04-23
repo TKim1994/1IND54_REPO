@@ -276,7 +276,7 @@
 					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
-			<NODE view="Sensor0" tz="30" rx="135"> <!--Posicion general-->
+			<NODE view="Sensor0" tx="-50" tz="30" rx="135"> <!--Posicion general-->
 				<NODE view="Sensor0" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" _1B2: Cilindro expulsor 1A1 extendido " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
@@ -322,7 +322,7 @@
 					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
-			<NODE view="Sensor1" tz="30" rx="135">
+			<NODE view="Sensor1" tx="-50" tz="30" rx="135">
 				<NODE view="Sensor1" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" _1B1: Cilindro expulsor 1A1 retraído " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
@@ -511,7 +511,7 @@
 					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
-			<NODE view="Sensor4" tx="-50" tz="30" rx="135">
+			<NODE view="Sensor4" tx="-80" tz="30" rx="135">
 				<NODE view="Sensor4" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" _3B2: Actuador Giratorio en Posición Downstream " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
@@ -558,7 +558,7 @@
 					<LINK w="40" h="20" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
-			<NODE view="Sensor5" tz="30" rx="135">
+			<NODE view="Sensor5" tx="-50" tz="30" rx="135">
 				<NODE view="Sensor5" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" B4: Base Disponible " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
