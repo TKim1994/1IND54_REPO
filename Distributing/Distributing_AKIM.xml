@@ -359,13 +359,13 @@
         <NODE view="Sensor2" tx="150" ty="-190" tz="90">
 			<NODE view="Sensors,Sensor2" ty="40" tz="-30">
 				<NODE view="Sensors">
-					<LINK w="50" h="50" d="40" refer="@view:Sensor2"/>
+					<LINK w="40" h="40" d="30" refer="@view:Sensor2"/>
 					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Sensor2">
-					<LINK w="50" h="50" d="40" refer="@view:Sensors"/>
+					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
 			<NODE view="Sensor2" tx="-50" tz="30" rx="135">
@@ -641,7 +641,7 @@
 		
 
 		<!-- ======================================== TOBERA DE ASPIRACION- Y INYECCION DE AIRE ======================================== -->
-        <NODE view="Actuator1" tx="150" ty="-190" tz="70">  <!--Posicion general del parelelepipedo celeste-->
+        <NODE view="Actuator1" tx="150" ty="-190" tz="90">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator1" ty="40" tz="-30">
 				<NODE view="Actuator1" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
