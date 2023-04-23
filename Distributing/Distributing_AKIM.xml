@@ -107,7 +107,8 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep1" tx="-80" tz="125" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿El LED está \nencendido? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿El LED está " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" encendido? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
         <NODE view="SetupStep1" tx="-165" ty="-375" tz="15">
