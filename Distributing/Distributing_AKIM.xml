@@ -154,7 +154,7 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep2" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" No workpieces? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Zona 'Almacén' libre? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
         <NODE view="SetupStep2" tx="100" ty="-150" tz="0">
@@ -193,7 +193,7 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep3" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" 'Reset' button pressed? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" '¿Actuador giratorio seteado? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
@@ -201,7 +201,7 @@
         <NODE view="SetupStep4" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep4" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep4" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 4. Colocar pieza en el stock " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 4. Colocar pieza(s) en el stock " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep4" ty="-45">
 					<NODE view="SetupStep4" tx="10" sx="15" sy="15" sz="15">
@@ -224,7 +224,7 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep4" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" Workpiece placed? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Pieza(s) colocada(s)? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 		
@@ -258,7 +258,7 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep5" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" 'Start' button pressed? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Boton 'Start' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
