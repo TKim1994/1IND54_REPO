@@ -452,7 +452,7 @@
 
 
 		<!-- ======================================== RFID ======================================== -->
-        <NODE view="RFID" tx="-115" ty="-170" tz="50">
+        <!--NODE view="RFID" tx="-115" ty="-170" tz="50">
 			<NODE view="Sensors,RFID" ty="10" tz="-10">
 				<NODE view="Sensors">
 					<LINK w="50" h="50" d="75" refer="@view:RFID"/>
@@ -494,7 +494,7 @@
 					</xNODE>
 				</NODE>			
 			</NODE>			
-		</NODE>
+		</NODE-->
 
 
 
