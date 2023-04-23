@@ -359,7 +359,7 @@
         <NODE view="Sensor2" tx="150" ty="-190" tz="90">
 			<NODE view="Sensors,Sensor2" ty="40" tz="-30">
 				<NODE view="Sensors">
-					<LINK w="240" h="40" d="30" refer="@view:Sensor2"/>
+					<LINK w="50" h="50" d="40" refer="@view:Sensor2"/>
 					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
@@ -502,13 +502,13 @@
         <NODE view="Sensor4" tx="150" ty="-190" tz="70">
 			<NODE view="Sensors,Sensor4" ty="40" tz="-30">
 				<NODE view="Sensors">
-					<LINK w="20" h="80" d="30" refer="@view:Sensor4"/>
+					<LINK w="40" h="40" d="30" refer="@view:Sensor4"/>
 					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Sensor4">
-					<LINK w="20" h="80" d="30" refer="@view:Sensors"/>
+					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
 			<NODE view="Sensor4" tz="30" rx="135">
@@ -549,13 +549,13 @@
         <NODE view="Sensor5" tx="-170" ty="-220" tz="30">
 			<NODE view="Sensors,Sensor5" ty="40" tz="-30">
 				<NODE view="Sensors">
-					<LINK w="20" h="40" d="30" refer="@view:Sensor5"/>
+					<LINK w="40" h="40" d="30" refer="@view:Sensor5"/>
 					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Sensor5">
-					<LINK w="20" h="40" d="30" refer="@view:Sensors"/>
+					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
 			<NODE view="Sensor5" tz="30" rx="135">
