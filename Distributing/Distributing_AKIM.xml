@@ -499,7 +499,7 @@
 
 
 		<!-- ======================================== SENSOR ACT GIR POS DOWNSTREAM ======================================== -->
-        <NODE view="Sensor4" tx="150" ty="-190" tz="70">
+        <NODE view="Sensor4" tx="150" ty="-190" tz="50">
 			<NODE view="Sensors,Sensor4" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor4"/>
