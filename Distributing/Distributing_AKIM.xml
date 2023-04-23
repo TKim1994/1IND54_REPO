@@ -404,7 +404,8 @@
 
 
 		<!-- ======================================== SENSOR ACT GIR POS ALMACEN ======================================== -->
-        <NODE view="Sensor3" tx="15" ty="-150" tz="20">
+        <!--NODE view="Sensor3" tx="15" ty="-150" tz="20"-->
+		<NODE view="Sensor3" tx="-85" ty="-160" tz="30">
 			<NODE view="Sensors,Sensor3" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor3"/>
@@ -416,12 +417,9 @@
 					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
-			<NODE view="Sensor3" tx="-50" rx="135">
-				<NODE view="Sensor3" tx="-2.6" tz="70"  sx="4" sy="4" sz="4">
-					<TEXT label=" _3B1: Actuador Giratorio " rgba="0091DCff" backrgba="ffffffff"/>
-				</NODE>
-				<NODE view="Sensor3" tx="-2.6" tz="10" sx="4" sy="4" sz="4">
-					<TEXT label=" en Posición Almacén " rgba="0091DCff" backrgba="ffffffff"/>
+			<NODE view="Sensor3" tx="-50" tz="30" rx="135">
+				<NODE view="Sensor3" tx="-2.6" sx="4" sy="4" sz="4">
+					<TEXT label=" _3B1: Actuador Giratorio en Posición 'Almacén' " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Sensor3" ty="-45">
 					<NODE view="Sensor3" tx="25" sx="30" sy="15" sz="15">
