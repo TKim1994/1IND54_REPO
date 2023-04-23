@@ -607,13 +607,13 @@
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="50" h="50" d="40" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<LINK w="50" h="200" d="40" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Actuator0">
-					<LINK w="50" h="50" d="40" refer="@view:Actuators"/>
+					<LINK w="50" h="200" d="40" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
 			<NODE view="Actuator0" tx="-50" tz="30" rx="135">
@@ -686,17 +686,17 @@
 		<!-- ======================================== ACTUADOR GIRATORIO ======================================== -->
 		<NODE view="Actuator2" tx="100" ty="-220" tz="30">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator2" ty="40" tz="-30">
-				<NODE view="Actuator2" tx="80" ry="-90" sx="4" sy="4" sz="4">
+				<NODE view="Actuator2" tx="60" ry="-90" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="80" h="50" d="100" refer="@view:Actuator2"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<LINK w="60" h="50" d="120" refer="@view:Actuator2"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10"> <!--Posicion del (i)-->
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Actuator2">
-					<LINK w="80" h="50" d="100" refer="@view:Actuators"/>
+					<LINK w="60" h="50" d="120" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
 			<NODE view="Actuator2" tx="-50" tz="60" rx="135">
