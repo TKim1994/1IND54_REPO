@@ -167,7 +167,7 @@
         <NODE view="SetupStep3" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep3" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep3" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 3. Colocar el actuador giratorio en la zona 'Downstream' " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 3. Reseteo de actuadores " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep3" ty="-45">
 					<NODE view="SetupStep3" tx="10" sx="15" sy="15" sz="15">
@@ -193,7 +193,7 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep3" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" '¿Actuador giratorio seteado? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Botón 'Reset' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
