@@ -365,7 +365,7 @@
 					</NODE>
 				</NODE>
 				<NODE view="Sensor2">
-					<LINK w="240" h="40" d="30" refer="@view:Sensors"/>
+					<LINK w="50" h="50" d="40" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
 			<NODE view="Sensor2" tx="-50" tz="30" rx="135">
