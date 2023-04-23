@@ -108,6 +108,8 @@
 			</NODE>
 			<NODE view="SetupStep1" tx="-80" tz="125" rx="135" sx="4" sy="4" sz="4">
 				<TEXT label=" ¿El LED está " rgba="0091DCff" backrgba="ffffffff"/>
+			</NODE>
+			<NODE view="SetupStep1" tx="-80" tz="100" rx="135" sx="4" sy="4" sz="4">
 				<TEXT label=" encendido? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
