@@ -84,10 +84,14 @@
 			</NODE>
 		</NODE>
 
+
+		
+		<!-- ======================================== COMMISSIONING ======================================== -->
+		<!-- === [1] === -->
         <NODE view="SetupStep1" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep1" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 1. Check power and air supply " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 1. Verificar fuentes de alimentación " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep1" ty="-45">
 					<NODE view="SetupStep1" tx="10" sx="15" sy="15" sz="15">
@@ -103,7 +107,7 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep1" tx="-80" tz="125" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" LED is on? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿El LED está encendido? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
         <NODE view="SetupStep1" tx="-165" ty="-375" tz="15">
@@ -111,10 +115,11 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep1" tx="10" ty="50" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" Pressure above 5 bar? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿La presión está a 5 bares? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
+		<!-- === [2] === -->
         <NODE view="SetupStep2" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep2" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep2" tx="-2.6" sx="4" sy="4" sz="4">
@@ -155,6 +160,7 @@
 			</NODE>
 		</NODE>
 
+		<!-- === [3] === -->
         <NODE view="SetupStep3" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep3" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep3" tx="-2.6" sx="4" sy="4" sz="4">
@@ -188,6 +194,7 @@
 			</NODE>
 		</NODE>
 
+		<!-- === [4] === -->
         <NODE view="SetupStep4" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep4" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep4" tx="-2.6" sx="4" sy="4" sz="4">
@@ -217,7 +224,8 @@
 				<TEXT label=" Workpiece placed? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-
+		
+		<!-- === [5] === -->
         <NODE view="SetupStep5" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep5" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep5" tx="-2.6" sx="4" sy="4" sz="4">
@@ -250,6 +258,7 @@
 				<TEXT label=" 'Start' button pressed? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
+
 
 		<!-- ======================================== SENSOR CILINDRO EXTENDIDO ======================================== -->
         <NODE view="Sensor0" tx="-210" ty="-200" tz="30"> <!--Posicion general de cubo-->
