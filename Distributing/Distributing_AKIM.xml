@@ -124,7 +124,7 @@
         <NODE view="SetupStep2" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep2" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep2" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 2. Remove workpieces " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 2. Quitar piezas de la zona 'almacén  " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep2" ty="-45">
 					<NODE view="SetupStep2" tx="10" sx="15" sy="15" sz="15">
@@ -199,7 +199,7 @@
         <NODE view="SetupStep4" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep4" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep4" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 4. Place workpiece on the conveyor " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 4. Colocar pieza en el stock " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep4" ty="-45">
 					<NODE view="SetupStep4" tx="10" sx="15" sy="15" sz="15">
