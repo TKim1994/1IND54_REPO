@@ -492,7 +492,7 @@
 
 		<!-- ======================================== SENSOR TAPA SUCCIONADA ======================================== -->
         <!--NODE view="Sensor4" tx="15" ty="-150" tz="20"-->
-		<NODE view="Sensor4" tx="-85" ty="-200" tz="140">
+		<NODE view="Sensor4" tx="0" ty="-200" tz="140">
 			<NODE view="Sensors,Sensor4" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor4"/>
@@ -688,19 +688,19 @@
 
 
 		<!-- ======================================== FAJA TRANSPORTADORA ======================================== -->
-        <NODE view="Actuator0" tx="-85" ty="-200" tz="30">
+        <NODE view="Actuator0" tx="0" ty="-200" tz="100">
 			<NODE view="Actuators,Actuator0" ty="40" tz="-30">
 				<NODE view="Actuator0" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="50" h="150" d="40" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<LINK w="240" h="50" d="40" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Actuator0">
-					<LINK w="50" h="150" d="40" refer="@view:Actuators"/>
+					<LINK w="240" h="50" d="40" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
 			<NODE view="Actuator0" tx="-50" tz="30" rx="135">
@@ -728,19 +728,19 @@
 		
 
 		<!-- ======================================== RETRAER/EXTENDER CILINDRO 1A1 ======================================== -->
-        <NODE view="Actuator1" tx="150" ty="-190" tz="90">  <!--Posicion general del parelelepipedo celeste-->
+        <NODE view="Actuator1" tx="0" ty="-225" tz="220">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator1" ty="40" tz="-30">
 				<NODE view="Actuator1" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="50" h="50" d="40" refer="@view:Actuator1"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<LINK w="50" h="100" d="40" refer="@view:Actuator1"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Actuator1">
-					<LINK w="50" h="50" d="40" refer="@view:Actuators"/>
+					<LINK w="50" h="100" d="40" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
 			<NODE view="Actuator1" tx="-50" tz="30" rx="135">
