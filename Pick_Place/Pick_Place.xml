@@ -48,7 +48,7 @@
 					</NODE>			
 					<NODE view="Station" tx="115" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="Manual.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/DataSheets/INT/648811_esfr_v2.0_Distribucion_Distribution_C_H5.pdf"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="https://tkim1994.github.io/1IND54_REPO/Resources/Pick_Place/678864_Manual_PickPlace.pdf"/>
 						</MODEL>			
 					</NODE>
 
@@ -66,7 +66,7 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:StationVideo"/>
 						</MODEL>
 						<NODE view="StationVideo" rx="-90" sx="0.3" sy="0.3" sz="0.3">
-							<DISPLAY text="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/DistributingStation.mp4"/>
+							<DISPLAY text="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Pick_Place/PickAndPlaceStation.mp4"/>
 							<NODE view="StationVideo" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
 								<MODEL file="plane.obj" texture="back.png">
 									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Station"/>
