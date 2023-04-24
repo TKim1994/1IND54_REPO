@@ -154,7 +154,7 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep2" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Zona 'Almacén' libre? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿'Slide' tiene tapas disponibles? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
         <NODE view="SetupStep2" tx="100" ty="-150" tz="0">
@@ -172,7 +172,7 @@
 				<NODE view="SetupStep3" ty="-45">
 					<NODE view="SetupStep3" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="OK.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep4"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep3"/>
 						</MODEL>			
 					</NODE>			
 				</NODE>			
@@ -185,15 +185,22 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep3" tx="-100" ty="100" tz="0">
+        <NODE view="SetupStep3" tx="-190" ty="-150" tz="0">
 			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
-			<NODE view="SetupStep3" tx="0" rx="135" sx="43.34" sy="50" sz="15">
-				<MODEL file="plane.obj" texture="Panel.png"/>
-			</NODE>			
+		</NODE>
+        <NODE view="SetupStep3" tx="-115" ty="-150" tz="0">
+			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+			</NODE>
 			<NODE view="SetupStep3" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
 				<TEXT label=" ¿Faja transportador está libre de piezas? " rgba="0091DCff" backrgba="ffffffff"/>
+			</NODE>
+		</NODE>
+        <NODE view="SetupStep3" tx="100" ty="-150" tz="0">
+			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 		</NODE>
 
@@ -201,7 +208,7 @@
         <NODE view="SetupStep4" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep4" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep4" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 3. Reseteo de actuadores " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 3. Reset de la estación " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep4" ty="-45">
 					<NODE view="SetupStep4" tx="10" sx="15" sy="15" sz="15">
