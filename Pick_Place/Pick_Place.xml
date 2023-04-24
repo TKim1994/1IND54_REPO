@@ -301,7 +301,7 @@
 			<NODE view="SetupStep6" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
 				<TEXT label=" ¿Boton 'STOP' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
-		</NODE>
+		</NODE>ss
 
 
 		<!-- ======================================== SENSOR BASE DISPONIBLE ======================================== -->
