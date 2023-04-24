@@ -728,7 +728,7 @@
 		
 
 		<!-- ======================================== RETRAER/EXTENDER CILINDRO 1A1 ======================================== -->
-        <NODE view="Actuator1" tx="0" ty="-225" tz="220">  <!--Posicion general del parelelepipedo celeste-->
+        <NODE view="Actuator1" tx="0" ty="-250" tz="220">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator1" ty="40" tz="-30">
 				<NODE view="Actuator1" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
@@ -771,7 +771,7 @@
 
 
 		<!-- ======================================== RETRAER/EXTENDER CILINDRO 2A1 ======================================== -->
-		<NODE view="Actuator2" tx="0" ty="-200" tz="150">  <!--Posicion general del parelelepipedo celeste-->
+		<NODE view="Actuator2" tx="0" ty="-200" tz="200">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator2" ty="40" tz="-30">
 				<NODE view="Actuator2" tx="60" ry="-90" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
