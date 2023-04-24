@@ -96,17 +96,10 @@
 				<NODE view="SetupStep1" ty="-45">
 					<NODE view="SetupStep1" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="OK.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep3"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep2"/>
 						</MODEL>			
 					</NODE>			
-				</NODE>			
-				<NODE view="SetupStep1" ty="-45">
-					<NODE view="SetupStep1" tx="45" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="back.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep1"/>
-						</MODEL>			
-					</NODE>			
-				</NODE>			
+				</NODE>	
 			</NODE>			
 		</NODE>
         <NODE view="SetupStep1" tx="-190" ty="-150" tz="0">
