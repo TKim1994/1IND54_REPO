@@ -91,52 +91,17 @@
         <NODE view="SetupStep1" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep1" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 1. Verificar fuentes de alimentación " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 1. Colocar tapas en el 'Slide' (máximo 10) " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep1" ty="-45">
 					<NODE view="SetupStep1" tx="10" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="OK.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep2"/>
-						</MODEL>			
-					</NODE>			
-				</NODE>			
-			</NODE>			
-		</NODE>
-        <NODE view="SetupStep1" tx="-90" ty="10" tz="-100">
-			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
-				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
-			</NODE>
-			<NODE view="SetupStep1" tx="-80" tz="125" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿El LED está " rgba="0091DCff" backrgba="ffffffff"/>
-			</NODE>
-			<NODE view="SetupStep1" tx="-80" tz="100" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" encendido? " rgba="0091DCff" backrgba="ffffffff"/>
-			</NODE>
-		</NODE>
-        <NODE view="SetupStep1" tx="-165" ty="-375" tz="15">
-			<NODE view="SetupStep1" rx="-90" sx="4" sy="4" sz="4">
-				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
-			</NODE>
-			<NODE view="SetupStep1" tx="10" ty="50" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿La presión está a 5 bares? " rgba="0091DCff" backrgba="ffffffff"/>
-			</NODE>
-		</NODE>
-
-		<!-- === [2] === -->
-        <NODE view="SetupStep2" tx="-100" ty="-75" tz="25">
-			<NODE view="SetupStep2" tx="-50" tz="30" rx="135">
-				<NODE view="SetupStep2" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 2. Colocar tapas en el 'Slide' " rgba="ffffffff" backrgba="0091DCff"/>
-				</NODE>
-				<NODE view="SetupStep2" ty="-45">
-					<NODE view="SetupStep2" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="OK.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep3"/>
 						</MODEL>			
 					</NODE>			
 				</NODE>			
-				<NODE view="SetupStep2" ty="-45">
-					<NODE view="SetupStep2" tx="45" sx="15" sy="15" sz="15">
+				<NODE view="SetupStep1" ty="-45">
+					<NODE view="SetupStep1" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="back.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep1"/>
 						</MODEL>			
@@ -144,22 +109,64 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep2" tx="-190" ty="-150" tz="0">
-			<NODE view="SetupStep2" sx="4" sy="4" sz="4">
+        <NODE view="SetupStep1" tx="-190" ty="-150" tz="0">
+			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 		</NODE>
-        <NODE view="SetupStep2" tx="-115" ty="-150" tz="0">
-			<NODE view="SetupStep2" sx="4" sy="4" sz="4">
+        <NODE view="SetupStep1" tx="-115" ty="-150" tz="0">
+			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
-			<NODE view="SetupStep2" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
+			<NODE view="SetupStep1" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
 				<TEXT label=" ¿El 'Slide' tiene tapas disponibles? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-        <NODE view="SetupStep2" tx="100" ty="-150" tz="0">
+        <NODE view="SetupStep1" tx="100" ty="-150" tz="0">
+			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+			</NODE>
+		</NODE>
+
+		<!-- === [2] === -->
+        <NODE view="SetupStep2" tx="-100" ty="-75" tz="25">
+			<NODE view="SetupStep2" tx="-50" tz="30" rx="135">
+				<NODE view="SetupStep2" tx="-2.6" sx="4" sy="4" sz="4">
+					<TEXT label=" 2. Verificar fuentes de alimentación " rgba="ffffffff" backrgba="0091DCff"/>
+				</NODE>
+				<NODE view="SetupStep2" ty="-45">
+					<NODE view="SetupStep2" tx="10" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="OK.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep3"/>
+						</MODEL>			
+					</NODE>			
+				</NODE>		
+				<NODE view="SetupStep2" ty="-45">
+					<NODE view="SetupStep2" tx="10" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="OK.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep1"/>
+						</MODEL>			
+					</NODE>			
+				</NODE>			
+			</NODE>			
+		</NODE>
+        <NODE view="SetupStep2" tx="-90" ty="10" tz="-100">
 			<NODE view="SetupStep2" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+			</NODE>
+			<NODE view="SetupStep2" tx="-80" tz="125" rx="135" sx="4" sy="4" sz="4">
+				<TEXT label=" ¿El LED está " rgba="0091DCff" backrgba="ffffffff"/>
+			</NODE>
+			<NODE view="SetupStep2" tx="-80" tz="100" rx="135" sx="4" sy="4" sz="4">
+				<TEXT label=" encendido? " rgba="0091DCff" backrgba="ffffffff"/>
+			</NODE>
+		</NODE>
+        <NODE view="SetupStep2" tx="-165" ty="-375" tz="15">
+			<NODE view="SetupStep2" rx="-90" sx="4" sy="4" sz="4">
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+			</NODE>
+			<NODE view="SetupStep2" tx="10" ty="50" rx="135" sx="4" sy="4" sz="4">
+				<TEXT label=" ¿La presión está a 5 bares? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
@@ -234,7 +241,7 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep4" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Botón 'Reset' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Botón 'RESET' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
@@ -299,7 +306,7 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep6" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Boton 'Start' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Boton 'STOP' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
