@@ -134,8 +134,8 @@
 						</MODEL>			
 					</NODE>			
 				</NODE>
-				<NODE view="SetupStep3" ty="-45">
-					<NODE view="SetupStep3" tx="45" sx="15" sy="15" sz="15">
+				<NODE view="SetupStep2" ty="-45">
+					<NODE view="SetupStep2" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="back.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep1"/>
 						</MODEL>			
