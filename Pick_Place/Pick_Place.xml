@@ -133,14 +133,14 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep3"/>
 						</MODEL>			
 					</NODE>			
-				</NODE>		
+				</NODE>
 				<NODE view="SetupStep2" ty="-45">
-					<NODE view="SetupStep2" tx="10" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="OK.png">
+					<NODE view="SetupStep2" tx="45" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="back.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep1"/>
 						</MODEL>			
 					</NODE>			
-				</NODE>			
+				</NODE>				
 			</NODE>			
 		</NODE>
         <NODE view="SetupStep2" tx="-90" ty="10" tz="-100">
@@ -281,7 +281,7 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Station"/>
 						</MODEL>			
 					</NODE>			
-				</NODE>			
+				</NODE>
 				<NODE view="SetupStep6" ty="-45">
 					<NODE view="SetupStep6" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="back.png">
