@@ -154,7 +154,7 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep2" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿'Slide' tiene tapas disponibles? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿El 'Slide' tiene tapas disponibles? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
         <NODE view="SetupStep2" tx="100" ty="-150" tz="0">
@@ -242,7 +242,7 @@
         <NODE view="SetupStep5" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep5" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep5" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 4. Colocar pieza en el inicio de faja " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 5. Colocar pieza en el inicio de faja " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep5" ty="-45">
 					<NODE view="SetupStep5" tx="10" sx="15" sy="15" sz="15">
@@ -269,11 +269,11 @@
 			</NODE>
 		</NODE>
 		
-		<!-- === [6] === -->tapa
+		<!-- === [6] === -->
         <NODE view="SetupStep6" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep6" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep6" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 5. Iniciar la operación " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 6. Iniciar la operación " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep6" ty="-45">
 					<NODE view="SetupStep6" tx="10" sx="15" sy="15" sz="15">
@@ -857,7 +857,7 @@
 
 
 		<!-- ======================================== DESACTIVAR/ACTIVAR SEPARADOR ======================================== -->
-		<NODE view="Actuator4" tx="0" ty="-200" tz="100">  <!--Posicion general del parelelepipedo celeste-->
+		<NODE view="Actuator4" tx="0" ty="-170" tz="100">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator4" ty="40" tz="-30">
 				<NODE view="Actuator4" tx="60" ry="-90" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
