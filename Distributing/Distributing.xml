@@ -92,10 +92,10 @@
 			<NODE view="SetupStep1" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep1" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" 1. Colocar pieza(s) en el stack " rgba="ffffffff" backrgba="0091DCff"/>
-				</NODE>		
+				</NODE>	
 				<NODE view="SetupStep1" ty="-45">
-					<NODE view="SetupStep1" tx="45" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="back.png">
+					<NODE view="SetupStep1" tx="10" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="OK.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep2"/>
 						</MODEL>			
 					</NODE>			
