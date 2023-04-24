@@ -26,19 +26,19 @@
         <NODE view="Station" tx="-125" ty="-75" tz="60">
 			<NODE view="Station" tx="-50" tz="30" rx="135">
 				<NODE view="Station" tx="-3.3" ty="4.6" sx="4" sy="4" sz="4">
-					<TEXT label="MPS® Estación Distributing I4.0" rgba="ffffffff" backrgba="0091dcff" >
-						<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/DistributionConveyorStation/EN/index.html"/>
+					<TEXT label="MPS® Estación Pick and Place I4.0" rgba="ffffffff" backrgba="0091dcff" >
+						<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/PickandPlaceStation/EN/index.html"/>
 					</TEXT>			
 				</NODE>			
 				<NODE view="Station" ty="-36">
 					<NODE view="Station" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="IPLogo.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/DistributionConveyorStation/EN/index.html"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/PickandPlaceStation/EN/index.html"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Station" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="3DLogo.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/MPS/DistributionConveyorStation/EN/3DAnimation.html"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/PickandPlaceStation/EN/3DAnimation.html"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Station" tx="80" sx="15" sy="15" sz="15">
