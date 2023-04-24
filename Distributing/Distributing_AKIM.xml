@@ -290,7 +290,7 @@
 						<MODEL file="plane.obj" texture="pdf.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="https://www.festo.com/es/es/a/download-document/datasheet/150857"/>
 						</MODEL>			
-					</NODE>			
+					</NODE>			s
 					<NODE view="Sensor0" tx="110" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="movie.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor0Video"/>
