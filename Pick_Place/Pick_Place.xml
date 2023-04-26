@@ -175,7 +175,7 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep3" tx="-115" ty="-150" tz="0">
+        <NODE view="SetupStep3" tx="50" ty="-200" tz="100">
 			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
@@ -240,7 +240,7 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep5" tx="-190" ty="-150" tz="0">
+        <NODE view="SetupStep5" tx="160" ty="-260" tz="100">
 			<NODE view="SetupStep5" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
