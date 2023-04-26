@@ -389,7 +389,7 @@
 
 
 		<!-- ======================================== SENSOR BASE SUCCIONADA ======================================== -->
-        <NODE view="Sensor2" tx="180" ty="-190" tz="120">
+        <NODE view="Sensor2" tx="195" ty="-190" tz="120">
 			<NODE view="Sensors,Sensor2" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor2"/>
@@ -531,7 +531,7 @@
 
 
 		<!-- ======================================== SENSOR ACT GIR POS DOWNSTREAM ======================================== -->
-        <NODE view="Sensor4" tx="180" ty="-190" tz="150">
+        <NODE view="Sensor4" tx="195" ty="-190" tz="150">
 			<NODE view="Sensors,Sensor4" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor4"/>
@@ -673,7 +673,7 @@
 		
 
 		<!-- ======================================== TOBERA DE ASPIRACION- Y INYECCION DE AIRE ======================================== -->
-        <NODE view="Actuator1" tx="180" ty="-190" tz="120">
+        <NODE view="Actuator1" tx="195" ty="-190" tz="120">
 			<NODE view="Actuators,Actuator1" ty="40" tz="-30">
 				<NODE view="Actuator1" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
@@ -716,7 +716,7 @@
 
 
 		<!-- ======================================== ACTUADOR GIRATORIO ======================================== -->
-		<NODE view="Actuator2" tx="60" ty="-190" tz="40">
+		<NODE view="Actuator2" tx="60" ty="-240" tz="40">
 			<NODE view="Actuators,Actuator2" ty="40" tz="-30">
 				<NODE view="Actuator2" tx="60" ry="-90" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
