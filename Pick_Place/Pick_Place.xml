@@ -102,7 +102,7 @@
 				</NODE>	
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep1" tx="-115" ty="-150" tz="0">
+        <NODE view="SetupStep1" tx="-80" ty="-300" tz="220">
 			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
