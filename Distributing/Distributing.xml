@@ -102,11 +102,6 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep1" tx="-190" ty="-150" tz="0">
-			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
-				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
-			</NODE>
-		</NODE>
         <NODE view="SetupStep1" tx="-115" ty="-150" tz="0">
 			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
@@ -115,7 +110,7 @@
 				<TEXT label=" ¿Hay pieza(s) en el 'Stack'? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-        <NODE view="SetupStep1" tx="100" ty="-150" tz="0">
+        <NODE view="SetupStep1" tx="100" ty="-200" tz="0">
 			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
