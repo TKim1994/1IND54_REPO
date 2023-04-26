@@ -693,13 +693,13 @@
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="240" h="50" d="40" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<LINK w="320" h="50" d="40" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Actuator0">
-					<LINK w="240" h="50" d="40" refer="@view:Actuators"/>
+					<LINK w="320" h="50" d="40" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
 			<NODE view="Actuator0" tx="-50" tz="30" rx="135">
@@ -727,7 +727,7 @@
 		
 
 		<!-- ======================================== RETRAER/EXTENDER CILINDRO 1A1 ======================================== -->
-        <NODE view="Actuator1" tx="0" ty="-250" tz="220">  <!--Posicion general del parelelepipedo celeste-->
+        <NODE view="Actuator1" tx="0" ty="-360" tz="220">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator1" ty="40" tz="-30">
 				<NODE view="Actuator1" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
@@ -770,7 +770,7 @@
 
 
 		<!-- ======================================== RETRAER/EXTENDER CILINDRO 2A1 ======================================== -->
-		<NODE view="Actuator2" tx="0" ty="-200" tz="200">  <!--Posicion general del parelelepipedo celeste-->
+		<NODE view="Actuator2" tx="0" ty="-260" tz="200">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator2" ty="40" tz="-30">
 				<NODE view="Actuator2" tx="60" ry="-90" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
@@ -813,7 +813,7 @@
 
 
 		<!-- ======================================== CERRAR/ABRIR SUCCION ======================================== -->
-		<NODE view="Actuator3" tx="0" ty="-200" tz="140">  <!--Posicion general del parelelepipedo celeste-->
+		<NODE view="Actuator3" tx="0" ty="-260" tz="140">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator3" ty="40" tz="-30">
 				<NODE view="Actuator3" tx="60" ry="-90" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
