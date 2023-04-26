@@ -175,7 +175,7 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep3" tx="-190" ty="-150" tz="0">
+        <NODE view="SetupStep3" tx="-120" ty="-200" tz="30">
 			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
@@ -230,19 +230,19 @@
 					<NODE view="SetupStep5" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="OK.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep6"/>
-						</MODEL>			
-					</NODE>			
-				</NODE>			
+						</MODEL>
+					</NODE>
+				</NODE>
 				<NODE view="SetupStep5" ty="-45">
 					<NODE view="SetupStep5" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="back.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep4"/>
-						</MODEL>			
-					</NODE>			
-				</NODE>			
-			</NODE>			
+						</MODEL>
+					</NODE>
+				</NODE>
+			</NODE>
 		</NODE>
-        <NODE view="SetupStep5" tx="-190" ty="-150" tz="0">
+        <NODE view="SetupStep5" tx="-120" ty="-200" tz="30">
 			<NODE view="SetupStep5" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
