@@ -144,7 +144,7 @@
 				<TEXT label=" encendido? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-        <NODE view="SetupStep2" tx="-165" ty="-375" tz="15">
+        <NODE view="SetupStep2" tx="165" ty="-375" tz="15">
 			<NODE view="SetupStep2" rx="-90" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
