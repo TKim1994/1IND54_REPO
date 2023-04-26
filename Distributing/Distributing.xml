@@ -26,19 +26,19 @@
         <NODE view="Station" tx="-125" ty="-75" tz="60">
 			<NODE view="Station" tx="-50" tz="30" rx="135">
 				<NODE view="Station" tx="-3.3" ty="4.6" sx="4" sy="4" sz="4">
-					<TEXT label="MPS® Estación Distributing I4.0" rgba="ffffffff" backrgba="0091dcff" >
-						<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/DistributionConveyorStation/EN/index.html"/>
+					<TEXT label="MPS® Estación Pick and Place I4.0" rgba="ffffffff" backrgba="0091dcff" >
+						<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/PickandPlaceStation/EN/index.html"/>
 					</TEXT>			
 				</NODE>			
 				<NODE view="Station" ty="-36">
 					<NODE view="Station" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="IPLogo.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/DistributionConveyorStation/EN/index.html"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/PickandPlaceStation/EN/index.html"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Station" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="3DLogo.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/MPS/DistributionConveyorStation/EN/3DAnimation.html"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="https://ip.festo-didactic.com/InfoPortal/MPS/PickandPlaceStation/EN/3DAnimation.html"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Station" tx="80" sx="15" sy="15" sz="15">
@@ -48,7 +48,7 @@
 					</NODE>			
 					<NODE view="Station" tx="115" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="Manual.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/648811_Manual_Distributing.pdf"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="https://tkim1994.github.io/1IND54_REPO/Resources/Pick_Place/678864_Manual_PickPlace.pdf"/>
 						</MODEL>			
 					</NODE>
 
@@ -66,7 +66,7 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:StationVideo"/>
 						</MODEL>
 						<NODE view="StationVideo" rx="-90" sx="0.3" sy="0.3" sz="0.3">
-							<DISPLAY text="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Distributing/DistributingStation.mp4"/>
+							<DISPLAY text="@video:https://tkim1994.github.io/1IND54_REPO/Resources/Pick_Place/PickAndPlaceStation.mp4"/>
 							<NODE view="StationVideo" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
 								<MODEL file="plane.obj" texture="back.png">
 									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Station"/>
@@ -91,23 +91,33 @@
         <NODE view="SetupStep1" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep1" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 1. Colocar pieza(s) en el stack (máximo 8) " rgba="ffffffff" backrgba="0091DCff"/>
-				</NODE>	
+					<TEXT label=" 1. Colocar tapas en el 'Slide' (máximo 10) " rgba="ffffffff" backrgba="0091DCff"/>
+				</NODE>
 				<NODE view="SetupStep1" ty="-45">
 					<NODE view="SetupStep1" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="OK.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep2"/>
 						</MODEL>			
 					</NODE>			
-				</NODE>			
+				</NODE>	
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep1" tx="-120" ty="-240" tz="30">
+        <NODE view="SetupStep1" tx="-190" ty="-150" tz="0">
+			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+			</NODE>
+		</NODE>
+        <NODE view="SetupStep1" tx="-115" ty="-150" tz="0">
 			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep1" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Hay pieza(s) en el 'Stack'? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿El 'Slide' tiene tapas disponibles? " rgba="0091DCff" backrgba="ffffffff"/>
+			</NODE>
+		</NODE>
+        <NODE view="SetupStep1" tx="100" ty="-150" tz="0">
+			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 		</NODE>
 
@@ -130,8 +140,8 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep1"/>
 						</MODEL>			
 					</NODE>			
-				</NODE>	
-			</NODE>
+				</NODE>				
+			</NODE>			
 		</NODE>
         <NODE view="SetupStep2" tx="-90" ty="10" tz="-100">
 			<NODE view="SetupStep2" sx="4" sy="4" sz="4">
@@ -149,7 +159,7 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep2" tx="10" ty="50" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿La presión está a 15 bares? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿La presión está a 5 bares? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
@@ -157,7 +167,7 @@
         <NODE view="SetupStep3" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep3" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep3" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 3. Quitar pieza(s) de la zona 'Almacén' " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 3. Despejar faja transportadora " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep3" ty="-45">
 					<NODE view="SetupStep3" tx="10" sx="15" sy="15" sz="15">
@@ -165,7 +175,7 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep4"/>
 						</MODEL>			
 					</NODE>			
-				</NODE>
+				</NODE>			
 				<NODE view="SetupStep3" ty="-45">
 					<NODE view="SetupStep3" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="back.png">
@@ -179,12 +189,20 @@
 			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
+		</NODE>
+        <NODE view="SetupStep3" tx="-115" ty="-150" tz="0">
+			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+			</NODE>
 			<NODE view="SetupStep3" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Zona 'Almacén' está despejada? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Faja transportador está libre de piezas? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-
-		
+        <NODE view="SetupStep3" tx="100" ty="-150" tz="0">
+			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+			</NODE>
+		</NODE>
 
 		<!-- === [4] === -->
         <NODE view="SetupStep4" tx="-100" ty="-75" tz="25">
@@ -216,15 +234,15 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep4" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Botón 'STOP' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Botón 'RESET' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-		
+
 		<!-- === [5] === -->
         <NODE view="SetupStep5" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep5" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep5" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 5. Volver a verificar que zona 'Almacén' esté despejada " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 5. Colocar pieza en el inicio de faja " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep5" ty="-45">
 					<NODE view="SetupStep5" tx="10" sx="15" sy="15" sz="15">
@@ -247,15 +265,15 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep5" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Zona 'Almacén' está despejada? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Pieza colocada al inicio de faja? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-
+		
 		<!-- === [6] === -->
         <NODE view="SetupStep6" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep6" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep6" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 5. Iniciar la operación " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 6. Iniciar la operación " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep6" ty="-45">
 					<NODE view="SetupStep6" tx="10" sx="15" sy="15" sz="15">
@@ -263,7 +281,7 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Station"/>
 						</MODEL>			
 					</NODE>			
-				</NODE>			
+				</NODE>
 				<NODE view="SetupStep6" ty="-45">
 					<NODE view="SetupStep6" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="back.png">
@@ -281,14 +299,14 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep6" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Boton 'START' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Boton 'STOP' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
 
-		<!-- ======================================== SENSOR CILINDRO EXTENDIDO ======================================== -->
-        <NODE view="Sensor0" tx="-120" ty="-160" tz="30">
-			<NODE view="Sensors,Sensor0"  ty="40" tz="-30"> <!--Posicion del i-->
+		<!-- ======================================== SENSOR BASE DISPONIBLE ======================================== -->
+        <NODE view="Sensor0" tx="120" ty="-200" tz="100">
+			<NODE view="Sensors,Sensor0" ty="40" tz="-30"> <!--Posicion del i-->
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor0"/>
 					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
@@ -301,11 +319,11 @@
 			</NODE>
 			<NODE view="Sensor0" tx="-50" tz="30" rx="135"> <!--Posicion general-->
 				<NODE view="Sensor0" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _1B2: Cilindro expulsor 1A1 extendido " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" Part_AV: Base Disponible " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Sensor0" ty="-45">
 					<NODE view="Sensor0" tx="25" sx="30" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerI2.1.png">
+						<MODEL file="plane.obj" texture="ControllerI2.0.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
 					</NODE>			
@@ -313,7 +331,7 @@
 						<MODEL file="plane.obj" texture="pdf.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="https://www.festo.com/es/es/a/download-document/datasheet/150857"/>
 						</MODEL>			
-					</NODE>
+					</NODE>			
 					<NODE view="Sensor0" tx="110" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="movie.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor0Video"/>
@@ -330,11 +348,11 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-		
-		
-		<!-- ======================================== SENSOR CILINDRO RETRAIDO ======================================== -->
-        <NODE view="Sensor1" tx="-120" ty="-280" tz="30">
-			<NODE view="Sensors,Sensor1" ty="40" tz="-30">
+
+
+		<!-- ======================================== SENSOR CILINDRO 1A1 RETRAIDO ======================================== -->
+        <NODE view="Sensor1" tx="0" ty="-250" tz="220">
+			<NODE view="Sensors,Sensor1" ty="40" tz="-30"> <!--Posicion del i-->
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor1"/>
 					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
@@ -345,19 +363,19 @@
 					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
-			<NODE view="Sensor1" tx="-50" tz="30" rx="135">
+			<NODE view="Sensor1" tx="-50" tz="30" rx="135"> <!--Posicion general-->
 				<NODE view="Sensor1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _1B1: Cilindro expulsor 1A1 retraído " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" _1B1: Cilindro 1A1 retraido " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Sensor1" ty="-45">
 					<NODE view="Sensor1" tx="25" sx="30" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerI2.2.png">
+						<MODEL file="plane.obj" texture="ControllerI2.1.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
 					</NODE>			
 					<NODE view="Sensor1" tx="75" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="pdf.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/150371.pdf"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="https://www.festo.com/es/es/a/download-document/datasheet/150857"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Sensor1" tx="110" sx="15" sy="15" sz="15">
@@ -365,7 +383,7 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor1Video"/>
 						</MODEL>
 						<NODE view="Sensor1Video" rx="-90" sx="0.3" sy="0.3" sz="0.3">
-							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/SensorInductive.mp4"/>
+							<DISPLAY text="@video:https://mariolufl.github.io/FestoPrueba/Distributing/SensorInductive.mp4"/> <!--http://festodidacticsw.azurewebsites.net/ar/mps/DiffuseSensor.mp4-->
 							<NODE view="Sensor1Video" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
 								<MODEL file="plane.obj" texture="back.png">
 									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor1"/>
@@ -376,10 +394,10 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-
-
-		<!-- ======================================== SENSOR BASE SUCCIONADA ======================================== -->
-        <NODE view="Sensor2" tx="210" ty="-190" tz="120">
+		
+		
+		<!-- ======================================== SENSOR CILINDRO 1A1 EXTENDIDO ======================================== -->
+        <NODE view="Sensor2" tx="0" ty="-200" tz="220">
 			<NODE view="Sensors,Sensor2" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor2"/>
@@ -393,17 +411,17 @@
 			</NODE>
 			<NODE view="Sensor2" tx="-50" tz="30" rx="135">
 				<NODE view="Sensor2" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _2B1: Base Succionada " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" _1B2: Cilindro 1A1 extendido " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Sensor2" ty="-45">
 					<NODE view="Sensor2" tx="25" sx="30" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerI2.3.png">
+						<MODEL file="plane.obj" texture="ControllerI2.2.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
 					</NODE>			
 					<NODE view="Sensor2" tx="75" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="pdf.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/537753.pdf"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/150371.pdf"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Sensor2" tx="110" sx="15" sy="15" sz="15">
@@ -411,7 +429,7 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor2Video"/>
 						</MODEL>
 						<NODE view="Sensor2Video" rx="-90" sx="0.3" sy="0.3" sz="0.3">
-							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/LightBarrier.mp4"/>
+							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/SensorInductive.mp4"/>
 							<NODE view="Sensor2Video" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
 								<MODEL file="plane.obj" texture="back.png">
 									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor2"/>
@@ -424,10 +442,8 @@
 		</NODE>
 
 
-
-
-		<!-- ======================================== SENSOR ACT GIR POS ALMACEN ======================================== -->
-		<NODE view="Sensor3" tx="-120" ty="-200" tz="30">
+		<!-- ======================================== SENSOR CILINDRO 2A1 RETRAIDO ======================================== -->
+        <NODE view="Sensor3" tx="0" ty="-200" tz="180">
 			<NODE view="Sensors,Sensor3" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor3"/>
@@ -441,17 +457,17 @@
 			</NODE>
 			<NODE view="Sensor3" tx="-50" tz="30" rx="135">
 				<NODE view="Sensor3" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _3B1: Actuador Giratorio en Posición 'Almacén' " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" _2B1: Cilindro 2A1 retraido " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Sensor3" ty="-45">
 					<NODE view="Sensor3" tx="25" sx="30" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerI2.4.png">
+						<MODEL file="plane.obj" texture="ControllerI2.3.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
 					</NODE>			
 					<NODE view="Sensor3" tx="75" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="pdf.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/150371.pdf"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/537753.pdf"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Sensor3" tx="110" sx="15" sy="15" sz="15">
@@ -459,10 +475,59 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor3Video"/>
 						</MODEL>
 						<NODE view="Sensor3Video" rx="-90" sx="0.3" sy="0.3" sz="0.3">
-							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/SensorInductive.mp4"/>
+							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/LightBarrier.mp4"/>
 							<NODE view="Sensor3Video" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
 								<MODEL file="plane.obj" texture="back.png">
 									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor3"/>
+								</MODEL>
+							</NODE>
+						</NODE>
+					</NODE>
+				</NODE>			
+			</NODE>			
+		</NODE>
+
+
+
+
+		<!-- ======================================== SENSOR TAPA SUCCIONADA ======================================== -->
+        <!--NODE view="Sensor4" tx="15" ty="-150" tz="20"-->
+		<NODE view="Sensor4" tx="0" ty="-200" tz="140">
+			<NODE view="Sensors,Sensor4" ty="40" tz="-30">
+				<NODE view="Sensors">
+					<LINK w="40" h="40" d="30" refer="@view:Sensor4"/>
+					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
+						<MODEL file="plane.obj" texture="about.png"/>
+					</NODE>
+				</NODE>
+				<NODE view="Sensor4">
+					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
+				</NODE>
+			</NODE>
+			<NODE view="Sensor4" tx="-50" tz="30" rx="135">
+				<NODE view="Sensor4" tx="-2.6" sx="4" sy="4" sz="4">
+					<TEXT label=" _3B1: Tapa Succionada " rgba="0091DCff" backrgba="ffffffff"/>
+				</NODE>
+				<NODE view="Sensor4" ty="-45">
+					<NODE view="Sensor4" tx="25" sx="30" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="ControllerI2.4.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
+						</MODEL>
+					</NODE>			
+					<NODE view="Sensor4" tx="75" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="pdf.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/150371.pdf"/>
+						</MODEL>			
+					</NODE>			
+					<NODE view="Sensor4" tx="110" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="movie.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor4Video"/>
+						</MODEL>
+						<NODE view="Sensor4Video" rx="-90" sx="0.3" sy="0.3" sz="0.3">
+							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/SensorInductive.mp4"/>
+							<NODE view="Sensor4Video" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
+								<MODEL file="plane.obj" texture="back.png">
+									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor4"/>
 								</MODEL>
 							</NODE>
 						</NODE>
@@ -520,79 +585,32 @@
 
 
 
-		<!-- ======================================== SENSOR ACT GIR POS DOWNSTREAM ======================================== -->
-        <NODE view="Sensor4" tx="210" ty="-190" tz="150">
-			<NODE view="Sensors,Sensor4" ty="40" tz="-30">
-				<NODE view="Sensors">
-					<LINK w="40" h="40" d="30" refer="@view:Sensor4"/>
-					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
-						<MODEL file="plane.obj" texture="about.png"/>
-					</NODE>
-				</NODE>
-				<NODE view="Sensor4">
-					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
-				</NODE>
-			</NODE>
-			<NODE view="Sensor4" tx="-80" tz="30" rx="135">
-				<NODE view="Sensor4" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _3B2: Actuador Giratorio en Posición Downstream " rgba="0091DCff" backrgba="ffffffff"/>
-				</NODE>
-				<NODE view="Sensor4" ty="-45">
-					<NODE view="Sensor4" tx="25" sx="30" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerI2.5.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
-						</MODEL>
-					</NODE>			
-					<NODE view="Sensor4" tx="75" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="pdf.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/553563.pdf"/>
-						</MODEL>			
-					</NODE>			
-					<NODE view="Sensor4" tx="110" sx="15" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="movie.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor4Video"/>
-						</MODEL>
-						<NODE view="Sensor4Video" rx="-90" sx="0.3" sy="0.3" sz="0.3">
-							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/LightBarrier.mp4"/>
-							<NODE view="Sensor4Video" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
-								<MODEL file="plane.obj" texture="back.png">
-									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor4"/>
-								</MODEL>
-							</NODE>
-						</NODE>
-					</NODE>
-				</NODE>			
-			</NODE>			
-		</NODE>
-
-
-
-		<!-- ======================================== SENSOR BASE DISPONIBLE ======================================== -->
-        <NODE view="Sensor5" tx="-120" ty="-240" tz="30">
+		<!-- ======================================== SENSOR BASE EN SEPARADOR ======================================== -->
+        <NODE view="Sensor5" tx="0" ty="-200" tz="100">
 			<NODE view="Sensors,Sensor5" ty="40" tz="-30">
 				<NODE view="Sensors">
-					<LINK w="40" h="20" d="30" refer="@view:Sensor5"/>
+					<LINK w="40" h="40" d="30" refer="@view:Sensor5"/>
 					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Sensor5">
-					<LINK w="40" h="20" d="30" refer="@view:Sensors"/>
+					<LINK w="40" h="40" d="30" refer="@view:Sensors"/>
 				</NODE>
 			</NODE>
-			<NODE view="Sensor5" tx="-50" tz="30" rx="135">
+			<NODE view="Sensor5" tx="-80" tz="30" rx="135">
 				<NODE view="Sensor5" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" B4: Base Disponible " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" B1: Sensor de Base en Separador " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Sensor5" ty="-45">
 					<NODE view="Sensor5" tx="25" sx="30" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerI2.6.png">
+						<MODEL file="plane.obj" texture="ControllerI2.5.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
 					</NODE>			
 					<NODE view="Sensor5" tx="75" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="pdf.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/150855.pdf"/>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/553563.pdf"/>
 						</MODEL>			
 					</NODE>			
 					<NODE view="Sensor5" tx="110" sx="15" sy="15" sz="15">
@@ -600,7 +618,7 @@
 							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor5Video"/>
 						</MODEL>
 						<NODE view="Sensor5Video" rx="-90" sx="0.3" sy="0.3" sz="0.3">
-							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/DiffuseSensor.mp4"/>
+							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/LightBarrier.mp4"/>
 							<NODE view="Sensor5Video" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
 								<MODEL file="plane.obj" texture="back.png">
 									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor5"/>
@@ -614,6 +632,50 @@
 
 
 
+		<!-- ======================================== SENSOR PRODUCTO FINAL ======================================== -->
+        <NODE view="Sensor6" tx="-120" ty="-200" tz="100">
+			<NODE view="Sensors,Sensor6" ty="40" tz="-30">
+				<NODE view="Sensors">
+					<LINK w="40" h="20" d="30" refer="@view:Sensor6"/>
+					<NODE view="Sensors" tz="16" rx="180" sx="10" sy="10" sz="10">
+						<MODEL file="plane.obj" texture="about.png"/>
+					</NODE>
+				</NODE>
+				<NODE view="Sensor6">
+					<LINK w="40" h="20" d="30" refer="@view:Sensors"/>
+				</NODE>
+			</NODE>
+			<NODE view="Sensor6" tx="-50" tz="30" rx="135">
+				<NODE view="Sensor6" tx="-2.6" sx="4" sy="4" sz="4">
+					<TEXT label=" B2: Producto Final " rgba="0091DCff" backrgba="ffffffff"/>
+				</NODE>
+				<NODE view="Sensor6" ty="-45">
+					<NODE view="Sensor6" tx="25" sx="30" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="ControllerI2.6.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
+						</MODEL>
+					</NODE>			
+					<NODE view="Sensor6" tx="75" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="pdf.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/150855.pdf"/>
+						</MODEL>			
+					</NODE>			
+					<NODE view="Sensor6" tx="110" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="movie.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor6Video"/>
+						</MODEL>
+						<NODE view="Sensor6Video" rx="-90" sx="0.3" sy="0.3" sz="0.3">
+							<DISPLAY text="@video:http://festodidacticsw.azurewebsites.net/ar/mps/DiffuseSensor.mp4"/>
+							<NODE view="Sensor6Video" tx="-21" rx="90" sx="2.5" sy="2.5" sz="2.5"> 
+								<MODEL file="plane.obj" texture="back.png">
+									<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Sensor6"/>
+								</MODEL>
+							</NODE>
+						</NODE>
+					</NODE>
+				</NODE>			
+			</NODE>			
+		</NODE>
 
 
 
@@ -622,25 +684,28 @@
 
 
 
-		<!-- ======================================== CILINDRO DOBLE EFECTO ======================================== -->
-        <NODE view="Actuator0" tx="-120" ty="-200" tz="-10">
+
+
+
+		<!-- ======================================== FAJA TRANSPORTADORA ======================================== -->
+        <NODE view="Actuator0" tx="0" ty="-200" tz="100">
 			<NODE view="Actuators,Actuator0" ty="40" tz="-30">
 				<NODE view="Actuator0" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="50" h="150" d="40" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<LINK w="240" h="50" d="40" refer="@view:Actuator0"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Actuator0">
-					<LINK w="50" h="150" d="40" refer="@view:Actuators"/>
+					<LINK w="240" h="50" d="40" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
 			<NODE view="Actuator0" tx="-50" tz="30" rx="135">
 				<NODE view="Actuator0" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _1M1: Cilindro Neumatico de Doble Efecto " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" K1: Encender/Apagar Faja Transportadora " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator0" ty="-45">
 					<NODE view="Actuator0" tx="31.43" sx="36.43" sy="15" sz="15">
@@ -662,25 +727,25 @@
 
 		
 
-		<!-- ======================================== TOBERA DE ASPIRACION- Y INYECCION DE AIRE ======================================== -->
-        <NODE view="Actuator1" tx="210" ty="-190" tz="120">
+		<!-- ======================================== RETRAER/EXTENDER CILINDRO 1A1 ======================================== -->
+        <NODE view="Actuator1" tx="0" ty="-250" tz="220">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator1" ty="40" tz="-30">
 				<NODE view="Actuator1" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="50" h="50" d="40" refer="@view:Actuator1"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<LINK w="50" h="100" d="40" refer="@view:Actuator1"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Actuator1">
-					<LINK w="50" h="50" d="40" refer="@view:Actuators"/>
+					<LINK w="50" h="100" d="40" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
 			<NODE view="Actuator1" tx="-50" tz="30" rx="135">
 				<NODE view="Actuator1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _2M1,_2M2: Tobera de Aspiracion y Inyeccion de Aire " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" _1M1,_1M2: Retraer y Extender cilindro 1A1 " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator1" ty="-45">
 					<NODE view="Actuator1" tx="31.43" sx="36.43" sy="15" sz="15">
@@ -705,33 +770,119 @@
 
 
 
-		<!-- ======================================== ACTUADOR GIRATORIO ======================================== -->
-		<NODE view="Actuator2" tx="60" ty="-240" tz="40">
+		<!-- ======================================== RETRAER/EXTENDER CILINDRO 2A1 ======================================== -->
+		<NODE view="Actuator2" tx="0" ty="-200" tz="200">  <!--Posicion general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator2" ty="40" tz="-30">
 				<NODE view="Actuator2" tx="60" ry="-90" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="70" h="70" d="50" refer="@view:Actuator2"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<LINK w="50" h="50" d="100" refer="@view:Actuator2"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
 					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10"> <!--Posicion del (i)-->
 						<MODEL file="plane.obj" texture="about.png"/>
 					</NODE>
 				</NODE>
 				<NODE view="Actuator2">
-					<LINK w="70" h="70" d="50" refer="@view:Actuators"/>
+					<LINK w="50" h="50" d="100" refer="@view:Actuators"/>
 				</NODE>
 			</NODE>
 			<NODE view="Actuator2" tx="-50" tz="60" rx="135">
 				<NODE view="Actuator2" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" _3M1,_3M2: Actuador Giratorio " rgba="0091DCff" backrgba="ffffffff"/>
+					<TEXT label=" _3M1: Retraer y Extender cilindro 2A1 " rgba="0091DCff" backrgba="ffffffff"/>
 				</NODE>
 				<NODE view="Actuator2" ty="-45">
 					<NODE view="Actuator2" tx="31.43" sx="36.43" sy="15" sz="15">
-						<MODEL file="plane.obj" texture="ControllerQ0.3_4.png">
+						<MODEL file="plane.obj" texture="ControllerQ0.3.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
 						</MODEL>
 					</NODE>
 					<NODE view="Actuator2" tx="87.86" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="pdf.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/374134.pdf"/>
+						</MODEL>
+					</NODE>
+				</NODE>			
+			</NODE>			
+		</NODE>
+
+
+
+
+
+
+
+
+
+		<!-- ======================================== CERRAR/ABRIR SUCCION ======================================== -->
+		<NODE view="Actuator3" tx="0" ty="-200" tz="140">  <!--Posicion general del parelelepipedo celeste-->
+			<NODE view="Actuators,Actuator3" ty="40" tz="-30">
+				<NODE view="Actuator3" tx="60" ry="-90" sx="4" sy="4" sz="4">
+					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+				</NODE>
+				<NODE view="Actuators">
+					<LINK w="50" h="50" d="40" refer="@view:Actuator3"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10"> <!--Posicion del (i)-->
+						<MODEL file="plane.obj" texture="about.png"/>
+					</NODE>
+				</NODE>
+				<NODE view="Actuator3">
+					<LINK w="50" h="50" d="40" refer="@view:Actuators"/>
+				</NODE>
+			</NODE>
+			<NODE view="Actuator3" tx="-50" tz="60" rx="135">
+				<NODE view="Actuator3" tx="-2.6" sx="4" sy="4" sz="4">
+					<TEXT label=" _3M1: Cerrar/Abrir Succión de Aire " rgba="0091DCff" backrgba="ffffffff"/>
+				</NODE>
+				<NODE view="Actuator3" ty="-45">
+					<NODE view="Actuator3" tx="31.43" sx="36.43" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="ControllerQ0.4.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
+						</MODEL>
+					</NODE>
+					<NODE view="Actuator3" tx="87.86" sx="15" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="pdf.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/374134.pdf"/>
+						</MODEL>
+					</NODE>
+				</NODE>			
+			</NODE>			
+		</NODE>
+
+
+
+
+
+
+
+
+
+		<!-- ======================================== DESACTIVAR/ACTIVAR SEPARADOR ======================================== -->
+		<NODE view="Actuator4" tx="0" ty="-170" tz="100">  <!--Posicion general del parelelepipedo celeste-->
+			<NODE view="Actuators,Actuator4" ty="40" tz="-30">
+				<NODE view="Actuator4" tx="60" ry="-90" sx="4" sy="4" sz="4">
+					<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
+				</NODE>
+				<NODE view="Actuators">
+					<LINK w="50" h="50" d="40" refer="@view:Actuator4"/> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10"> <!--Posicion del (i)-->
+						<MODEL file="plane.obj" texture="about.png"/>
+					</NODE>
+				</NODE>
+				<NODE view="Actuator4">
+					<LINK w="50" h="50" d="40" refer="@view:Actuators"/>
+				</NODE>
+			</NODE>
+			<NODE view="Actuator4" tx="-50" tz="60" rx="135">
+				<NODE view="Actuator4" tx="-2.6" sx="4" sy="4" sz="4">
+					<TEXT label=" _4M1: Desactivar/Activar Separador " rgba="0091DCff" backrgba="ffffffff"/>
+				</NODE>
+				<NODE view="Actuator4" ty="-45">
+					<NODE view="Actuator4" tx="31.43" sx="36.43" sy="15" sz="15">
+						<MODEL file="plane.obj" texture="ControllerQ0.5.png">
+							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/AR/EN/Help.html#DisplayElements"/>
+						</MODEL>
+					</NODE>
+					<NODE view="Actuator4" tx="87.86" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="pdf.png">
 							<LINK w="0.1" h="0.1" xd="0.1" refer="http://ip.festo-didactic.com/InfoPortal/DataSheets/EN/374134.pdf"/>
 						</MODEL>
