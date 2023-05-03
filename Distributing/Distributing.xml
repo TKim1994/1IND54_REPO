@@ -144,7 +144,7 @@
 				<TEXT label=" encendidos? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-        <NODE view="SetupStep2" tx="130" ty="-430" tz="15">
+        <NODE view="SetupStep2" tx="125" ty="-430" tz="15">
 			<NODE view="SetupStep2" rx="-90" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
@@ -175,7 +175,7 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep3" tx="-120" ty="-140" tz="0">
+        <NODE view="SetupStep3" tx="-120" ty="-145" tz="0">
 			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
@@ -208,7 +208,7 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep4" tx="-140" ty="300" tz="-80">
+        <NODE view="SetupStep4" tx="-110" ty="250" tz="-60">
 			<NODE view="SetupStep4" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
