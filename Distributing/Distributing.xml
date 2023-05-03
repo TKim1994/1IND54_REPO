@@ -133,15 +133,15 @@
 				</NODE>	
 			</NODE>
 		</NODE>
-        <NODE view="SetupStep2" tx="-90" ty="10" tz="-100">
+        <NODE view="SetupStep2" tx="-50" ty="10" tz="-120">
 			<NODE view="SetupStep2" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep2" tx="-80" tz="125" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿El LED está " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Los LED están " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 			<NODE view="SetupStep2" tx="-80" tz="100" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" encendido? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" encendidos? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
         <NODE view="SetupStep2" tx="140" ty="-375" tz="15">
