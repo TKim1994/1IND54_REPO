@@ -287,7 +287,7 @@
 
 
 		<!-- ======================================== SENSOR CILINDRO EXTENDIDO ======================================== -->
-        <NODE view="Sensor0" tx="-120" ty="-280" tz="10">
+        <NODE view="Sensor0" tx="-120" ty="-240" tz="10">
 			<NODE view="Sensors,Sensor0"  ty="40" tz="-30"> <!--Posicion del i-->
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor0"/>
@@ -427,7 +427,7 @@
 
 
 		<!-- ======================================== SENSOR ACT GIR POS ALMACEN ======================================== -->
-		<NODE view="Sensor3" tx="-120" ty="-240" tz="10">
+		<NODE view="Sensor3" tx="-120" ty="-200" tz="10">
 			<NODE view="Sensors,Sensor3" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor3"/>
@@ -568,7 +568,7 @@
 
 
 		<!-- ======================================== SENSOR BASE DISPONIBLE ======================================== -->
-        <NODE view="Sensor5" tx="-120" ty="-200" tz="10">
+        <NODE view="Sensor5" tx="-120" ty="-280" tz="10">
 			<NODE view="Sensors,Sensor5" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor5"/>
