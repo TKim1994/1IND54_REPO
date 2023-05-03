@@ -133,7 +133,7 @@
 				</NODE>	
 			</NODE>
 		</NODE>
-        <NODE view="SetupStep2" tx="-50" ty="-40" tz="-120">
+        <NODE view="SetupStep2" tx="-50" ty="60" tz="-120">
 			<NODE view="SetupStep2" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
@@ -287,7 +287,7 @@
 
 
 		<!-- ======================================== SENSOR CILINDRO EXTENDIDO ======================================== -->
-        <NODE view="Sensor0" tx="-120" ty="-200" tz="10">
+        <NODE view="Sensor0" tx="-120" ty="-280" tz="10">
 			<NODE view="Sensors,Sensor0"  ty="40" tz="-30"> <!--Posicion del i-->
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor0"/>
@@ -568,7 +568,7 @@
 
 
 		<!-- ======================================== SENSOR BASE DISPONIBLE ======================================== -->
-        <NODE view="Sensor5" tx="-120" ty="-280" tz="10">
+        <NODE view="Sensor5" tx="-120" ty="-200" tz="10">
 			<NODE view="Sensors,Sensor5" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor5"/>
