@@ -397,7 +397,7 @@
 
 
 		<!-- ======================================== SENSOR CILINDRO 1A1 EXTENDIDO ======================================== -->
-		<NODE view="Sensor2" tx="0" ty="-300" tz="200">
+		<NODE view="Sensor2" tx="0" ty="-220" tz="200">
 			<NODE view="Sensors,Sensor2" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor2" />
@@ -446,7 +446,7 @@
 
 
 		<!-- ======================================== SENSOR CILINDRO 2A1 RETRAIDO ======================================== -->
-		<NODE view="Sensor3" tx="0" ty="-300" tz="180">
+		<NODE view="Sensor3" tx="0" ty="-300" tz="160">
 			<NODE view="Sensors,Sensor3" ty="40" tz="-30">
 				<NODE view="Sensors">
 					<LINK w="40" h="40" d="30" refer="@view:Sensor3" />
@@ -694,7 +694,7 @@
 
 
 		<!-- ======================================== FAJA TRANSPORTADORA ======================================== -->
-		<NODE view="Actuator0" tx="0" ty="-220" tz="60">
+		<NODE view="Actuator0" tx="0" ty="-210" tz="60">
 			<NODE view="Actuators,Actuator0" ty="40" tz="-30">
 				<NODE view="Actuator0" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png" />
