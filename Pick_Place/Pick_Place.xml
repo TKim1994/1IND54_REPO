@@ -116,7 +116,7 @@
 		</NODE>
 
 		<!-- === [2] === -->
-        <NODE view="SetupStep2" tx="-135" ty="-75" tz="25">
+        <NODE view="SetupStep2" tx="-150" ty="-75" tz="25">
 			<NODE view="SetupStep2" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep2" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" 2. Verificar fuentes de alimentación " rgba="ffffffff" backrgba="0091DCff"/>
@@ -180,7 +180,7 @@
 				</NODE>
 			</NODE>
 		</NODE>
-		<NODE view="SetupStep3" tx="50" ty="-170" tz="60">
+		<NODE view="SetupStep3" tx="20" ty="-170" tz="60">
 			<NODE view="SetupStep3" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png" />
 			</NODE>
@@ -247,7 +247,7 @@
 				</NODE>
 			</NODE>
 		</NODE>
-		<NODE view="SetupStep5" tx="-200" ty="-180" tz="60">
+		<NODE view="SetupStep5" tx="-170" ty="-180" tz="60">
 			<NODE view="SetupStep5" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png" />
 			</NODE>
