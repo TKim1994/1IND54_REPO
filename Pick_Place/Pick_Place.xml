@@ -449,8 +449,7 @@
 		</NODE>
 
 
-		<!-- ======================================== SENSOR CILINDRO 2A1 RETRAIDO
-		======================================== -->
+		<!-- ======================================== SENSOR CILINDRO 2A1 RETRAIDO ======================================== -->
 		<NODE view="Sensor3" tx="0" ty="-300" tz="180">
 			<NODE view="Sensors,Sensor3" ty="40" tz="-30">
 				<NODE view="Sensors">
@@ -499,8 +498,7 @@
 		</NODE>
 
 
-		<!-- ======================================== SENSOR TAPA SUCCIONADA
-		======================================== -->
+		<!-- ======================================== SENSOR TAPA SUCCIONADA ======================================== -->
 		<NODE view="Sensor4" tx="0" ty="-300" tz="110">
 			<NODE view="Sensors,Sensor4" ty="40" tz="-30">
 				<NODE view="Sensors">
@@ -649,8 +647,7 @@
 		</NODE>
 
 
-		<!-- ======================================== SENSOR PRODUCTO FINAL
-		======================================== -->
+		<!-- ======================================== SENSOR PRODUCTO FINAL ======================================== -->
 		<NODE view="Sensor6" tx="160" ty="-200" tz="100">
 			<NODE view="Sensors,Sensor6" ty="40" tz="-30"> <!--Posicion
 				del i-->
@@ -701,8 +698,7 @@
 		</NODE>
 
 
-		<!-- ======================================== FAJA TRANSPORTADORA
-		======================================== -->
+		<!-- ======================================== FAJA TRANSPORTADORA ======================================== -->
 		<NODE view="Actuator0" tx="0" ty="-200" tz="60">
 			<NODE view="Actuators,Actuator0" ty="40" tz="-30">
 				<NODE view="Actuator0" ty="-80" rx="-90" ry="180" sx="4" sy="4" sz="4">
