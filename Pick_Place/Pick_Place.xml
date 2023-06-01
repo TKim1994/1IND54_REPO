@@ -188,7 +188,7 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png" />
 			</NODE>
 			<NODE view="SetupStep3" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Faja transportador está libre de piezas? " rgba="0091DCff"
+				<TEXT label=" ¿Botón RESET listo para presionarse? " rgba="0091DCff"
 					backrgba="ffffffff" />
 			</NODE>
 		</NODE>
@@ -264,7 +264,7 @@
 		<NODE view="SetupStep6" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep6" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep6" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 6. Iniciar la operación " rgba="ffffffff" backrgba="0091DCff" />
+					<TEXT label=" 6. Iniciar la secuencia al presionar STOP " rgba="ffffffff" backrgba="0091DCff" />
 				</NODE>
 				<NODE view="SetupStep6" ty="-45">
 					<NODE view="SetupStep6" tx="10" sx="15" sy="15" sz="15">
