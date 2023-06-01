@@ -216,7 +216,7 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep4" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Botón 'STOP' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Se presionó el botón 'STOP'? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 		
@@ -281,7 +281,7 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep6" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Boton 'START' presionado? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Se presionó el botón 'START'? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 

@@ -188,42 +188,42 @@
 				<MODEL file="targetArrow.obj" texture="targetArrow.png" />
 			</NODE>
 			<NODE view="SetupStep3" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Botón RESET listo para presionarse? " rgba="0091DCff"
+				<TEXT label=" ¿Se quitaron todas los piezas de la faja transportadora? " rgba="0091DCff"
 					backrgba="ffffffff" />
 			</NODE>
 		</NODE>
 
 		<!-- === [4] === -->
-		<NODE view="SetupStep4" tx="-100" ty="-75" tz="25">
+        <NODE view="SetupStep4" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep4" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep4" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 4. Reset de la estación " rgba="ffffffff" backrgba="0091DCff" />
+					<TEXT label=" 4. Reset de la estación " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep4" ty="-45">
 					<NODE view="SetupStep4" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="OK.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep5" />
-						</MODEL>
-					</NODE>
-				</NODE>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep5"/>
+						</MODEL>			
+					</NODE>			
+				</NODE>			
 				<NODE view="SetupStep4" ty="-45">
 					<NODE view="SetupStep4" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="back.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep3" />
-						</MODEL>
-					</NODE>
-				</NODE>
-			</NODE>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep3"/>
+						</MODEL>			
+					</NODE>			
+				</NODE>			
+			</NODE>			
 		</NODE>
-		<NODE view="SetupStep4" tx="-100" ty="100" tz="0">
+        <NODE view="SetupStep4" tx="-110" ty="250" tz="-170">
 			<NODE view="SetupStep4" sx="4" sy="4" sz="4">
-				<MODEL file="targetArrow.obj" texture="targetArrow.png" />
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep4" tx="0" rx="135" sx="43.34" sy="50" sz="15">
-				<MODEL file="plane.obj" texture="Panel.png" />
-			</NODE>
+				<MODEL file="plane.obj" texture="Panel.png"/>
+			</NODE>			
 			<NODE view="SetupStep4" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Botón 'RESET' presionado? " rgba="0091DCff" backrgba="ffffffff" />
+				<TEXT label=" ¿Se presionó el botón 'RESET'? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
@@ -261,36 +261,36 @@
 		</NODE>
 
 		<!-- === [6] === -->
-		<NODE view="SetupStep6" tx="-100" ty="-75" tz="25">
+        <NODE view="SetupStep6" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep6" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep6" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 6. Iniciar la secuencia al presionar STOP " rgba="ffffffff" backrgba="0091DCff" />
+					<TEXT label=" 5. Iniciar la operación " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep6" ty="-45">
 					<NODE view="SetupStep6" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="OK.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Station" />
-						</MODEL>
-					</NODE>
-				</NODE>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:Station"/>
+						</MODEL>			
+					</NODE>			
+				</NODE>			
 				<NODE view="SetupStep6" ty="-45">
 					<NODE view="SetupStep6" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="back.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep5" />
-						</MODEL>
-					</NODE>
-				</NODE>
-			</NODE>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep5"/>
+						</MODEL>			
+					</NODE>			
+				</NODE>			
+			</NODE>			
 		</NODE>
-		<NODE view="SetupStep6" tx="-100" ty="100" tz="0">
+        <NODE view="SetupStep6" tx="-110" ty="250" tz="-170">
 			<NODE view="SetupStep6" sx="4" sy="4" sz="4">
-				<MODEL file="targetArrow.obj" texture="targetArrow.png" />
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep6" tx="0" ty="15" tz="-15" rx="135" sx="43.34" sy="50" sz="15">
-				<MODEL file="plane.obj" texture="Panel.png" />
-			</NODE>
+				<MODEL file="plane.obj" texture="Panel.png"/>
+			</NODE>			
 			<NODE view="SetupStep6" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Boton 'STOP' presionado? " rgba="0091DCff" backrgba="ffffffff" />
+				<TEXT label=" ¿Se presionó el botón 'STOP'? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
