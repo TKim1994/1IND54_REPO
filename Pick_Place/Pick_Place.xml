@@ -696,7 +696,7 @@
 		<!-- ======================================== FAJA TRANSPORTADORA ======================================== -->
 		<NODE view="Actuator0" tx="0" ty="-210" tz="60">
 			<NODE view="Actuators,Actuator0" ty="40" tz="-30">
-				<NODE view="Actuator0" tx="150" ty="0" rx="0" ry="90" sx="4" sy="4" sz="4">
+				<NODE view="Actuator0" tx="150" ty="0" rx="90" ry="45" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png" />
 				</NODE>
 				<NODE view="Actuators">
@@ -861,7 +861,7 @@
 		<NODE view="Actuator4" tx="0" ty="-170" tz="100">  <!--Posicion
 			general del parelelepipedo celeste-->
 			<NODE view="Actuators,Actuator4" ty="40" tz="-30">
-				<NODE view="Actuator4" tx="60" rx="0" ry="-90" sx="4" sy="4" sz="4">
+				<NODE view="Actuator4" tx="60" rx="90" ry="-45" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png" />
 				</NODE>
 				<NODE view="Actuators">
