@@ -733,7 +733,7 @@
 		<!-- ======================================== RETRAER/EXTENDER CILINDRO 1A1 ======================================== -->
 		<NODE view="Actuator1" tx="0" ty="-390" tz="180">
 			<NODE view="Actuators,Actuator1" ty="40" tz="-30">
-				<NODE view="Actuator1" ty="-30" rx="90" ry="0" sx="4" sy="4" sz="4">
+				<NODE view="Actuator1" ty="30" rx="90" ry="0" sx="4" sy="4" sz="4">
 					<MODEL file="targetArrow.obj" texture="targetArrow.png" />
 				</NODE>
 				<NODE view="Actuators">
