@@ -92,7 +92,7 @@
 
 		<!-- ======================================== COMMISSIONING ======================================== -->
 		<!-- === [1] === -->
-		<NODE view="SetupStep1" tx="-100" ty="-75" tz="25">
+		<NODE view="SetupStep1" tx="-120" ty="-75" tz="25">
 			<NODE view="SetupStep1" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep1" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" 1. Colocar tapas en el 'Slide' (máximo 10) " rgba="ffffffff"
