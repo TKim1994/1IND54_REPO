@@ -596,8 +596,7 @@
 		</NODE-->
 
 
-		<!-- ======================================== SENSOR BASE EN SEPARADOR
-		======================================== -->
+		<!-- ======================================== SENSOR BASE EN SEPARADOR ======================================== -->
 		<NODE view="Sensor5" tx="0" ty="-200" tz="100">
 			<NODE view="Sensors,Sensor5" ty="40" tz="-30">
 				<NODE view="Sensors">
@@ -705,9 +704,8 @@
 					<MODEL file="targetArrow.obj" texture="targetArrow.png" />
 				</NODE>
 				<NODE view="Actuators">
-					<LINK w="320" h="50" d="40" refer="@view:Actuator0" /> <!--Dimensiones
-					del parelelepipedo celeste (d es altura) -->
-					<NODE view="Actuators" tz="21" rx="180" sx="10" sy="10" sz="10">
+					<LINK w="350" h="50" d="40" refer="@view:Actuator0" /> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
+					<NODE view="Actuators" tz="100" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png" />
 					</NODE>
 				</NODE>
