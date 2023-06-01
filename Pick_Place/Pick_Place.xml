@@ -92,7 +92,7 @@
 
 		<!-- ======================================== COMMISSIONING ======================================== -->
 		<!-- === [1] === -->
-        <NODE view="SetupStep1" tx="-150" ty="-75" tz="25">
+        <NODE view="SetupStep1" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep1" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep1" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" 1. Colocar tapas en el 'Slide' (máximo 10) " rgba="ffffffff" backrgba="0091DCff"/>
@@ -116,7 +116,7 @@
 		</NODE>
 
 		<!-- === [2] === -->
-        <NODE view="SetupStep2" tx="-150" ty="-75" tz="25">
+        <NODE view="SetupStep2" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep2" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep2" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" 2. Verificar fuentes de alimentación " rgba="ffffffff" backrgba="0091DCff"/>
@@ -137,7 +137,7 @@
 				</NODE>	
 			</NODE>
 		</NODE>
-        <NODE view="SetupStep2" tx="-125" ty="250" tz="-650">
+        <NODE view="SetupStep2" tx="-135" ty="250" tz="-650">
 			<NODE view="SetupStep2" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
@@ -148,7 +148,7 @@
 				<TEXT label=" encendido? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-        <NODE view="SetupStep2" tx="125" ty="-430" tz="15">
+        <NODE view="SetupStep2" tx="110" ty="-430" tz="15">
 			<NODE view="SetupStep2" rx="-90" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
