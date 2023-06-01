@@ -106,7 +106,7 @@
 				</NODE>			
 			</NODE>			
 		</NODE>
-        <NODE view="SetupStep1" tx="-120" ty="-190" tz="-100">
+        <NODE view="SetupStep1" tx="-120" ty="-240" tz="60">
 			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
 				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
@@ -116,45 +116,44 @@
 		</NODE>
 
 		<!-- === [2] === -->
-		<NODE view="SetupStep2" tx="-100" ty="-75" tz="25">
+        <NODE view="SetupStep2" tx="-120" ty="-75" tz="25">
 			<NODE view="SetupStep2" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep2" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 2. Verificar fuentes de alimentación " rgba="ffffffff"
-						backrgba="0091DCff" />
+					<TEXT label=" 2. Verificar fuentes de alimentación " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>
 				<NODE view="SetupStep2" ty="-45">
 					<NODE view="SetupStep2" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="OK.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep3" />
-						</MODEL>
-					</NODE>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep3"/>
+						</MODEL>			
+					</NODE>			
 				</NODE>
 				<NODE view="SetupStep2" ty="-45">
 					<NODE view="SetupStep2" tx="45" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="back.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep1" />
-						</MODEL>
-					</NODE>
-				</NODE>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep1"/>
+						</MODEL>			
+					</NODE>			
+				</NODE>	
 			</NODE>
 		</NODE>
-		<NODE view="SetupStep2" tx="-90" ty="10" tz="-100">
+        <NODE view="SetupStep2" tx="-125" ty="250" tz="-650">
 			<NODE view="SetupStep2" sx="4" sy="4" sz="4">
-				<MODEL file="targetArrow.obj" texture="targetArrow.png" />
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep2" tx="-80" tz="125" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿El LED está " rgba="0091DCff" backrgba="ffffffff" />
+				<TEXT label=" ¿El LED está " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 			<NODE view="SetupStep2" tx="-80" tz="100" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" encendido? " rgba="0091DCff" backrgba="ffffffff" />
+				<TEXT label=" encendido? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
-		<NODE view="SetupStep2" tx="165" ty="-375" tz="15">
+        <NODE view="SetupStep2" tx="125" ty="-430" tz="15">
 			<NODE view="SetupStep2" rx="-90" sx="4" sy="4" sz="4">
-				<MODEL file="targetArrow.obj" texture="targetArrow.png" />
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep2" tx="10" ty="50" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿La presión está a 5 bares? " rgba="0091DCff" backrgba="ffffffff" />
+				<TEXT label=" ¿La presión está a 15 bares? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
