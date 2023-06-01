@@ -92,28 +92,26 @@
 
 		<!-- ======================================== COMMISSIONING ======================================== -->
 		<!-- === [1] === -->
-		<NODE view="SetupStep1" tx="-120" ty="-75" tz="25">
+        <NODE view="SetupStep1" tx="-150" ty="-75" tz="25">
 			<NODE view="SetupStep1" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 1. Colocar tapas en el 'Slide' (máximo 10) " rgba="ffffffff"
-						backrgba="0091DCff" />
-				</NODE>
+					<TEXT label=" 1. Colocar pieza(s) en el stack (máximo 8) " rgba="ffffffff" backrgba="0091DCff"/>
+				</NODE>	
 				<NODE view="SetupStep1" ty="-45">
 					<NODE view="SetupStep1" tx="10" sx="15" sy="15" sz="15">
 						<MODEL file="plane.obj" texture="OK.png">
-							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep2" />
-						</MODEL>
-					</NODE>
-				</NODE>
-			</NODE>
+							<LINK w="0.1" h="0.1" xd="0.1" refer="@view:SetupStep2"/>
+						</MODEL>			
+					</NODE>			
+				</NODE>			
+			</NODE>			
 		</NODE>
-		<NODE view="SetupStep1" tx="-80" ty="-300" tz="220">
+        <NODE view="SetupStep1" tx="-120" ty="-240" tz="30">
 			<NODE view="SetupStep1" sx="4" sy="4" sz="4">
-				<MODEL file="targetArrow.obj" texture="targetArrow.png" />
+				<MODEL file="targetArrow.obj" texture="targetArrow.png"/>
 			</NODE>
 			<NODE view="SetupStep1" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿El 'Slide' tiene tapas disponibles? " rgba="0091DCff"
-					backrgba="ffffffff" />
+				<TEXT label=" ¿Hay pieza(s) en el 'Stack'? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
