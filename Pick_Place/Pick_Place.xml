@@ -705,7 +705,7 @@
 				</NODE>
 				<NODE view="Actuators">
 					<LINK w="350" h="50" d="40" refer="@view:Actuator0" /> <!--Dimensiones del parelelepipedo celeste (d es altura) -->
-					<NODE view="Actuators" tz="100" rx="180" sx="10" sy="10" sz="10">
+					<NODE view="Actuators" tx="-100" tz="21" rx="180" sx="10" sy="10" sz="10">
 						<MODEL file="plane.obj" texture="about.png" />
 					</NODE>
 				</NODE>
@@ -713,7 +713,7 @@
 					<LINK w="320" h="50" d="40" refer="@view:Actuators" />
 				</NODE>
 			</NODE>
-			<NODE view="Actuator0" tx="-50" tz="30" rx="135">
+			<NODE view="Actuator0" tx="-150" tz="30" rx="135">
 				<NODE view="Actuator0" tx="-2.6" sx="4" sy="4" sz="4">
 					<TEXT label=" K1: Encender/Apagar Faja Transportadora " rgba="0091DCff"
 						backrgba="ffffffff" />
