@@ -95,7 +95,7 @@
         <NODE view="SetupStep1" tx="-100" ty="-75" tz="25">
 			<NODE view="SetupStep1" tx="-50" tz="30" rx="135">
 				<NODE view="SetupStep1" tx="-2.6" sx="4" sy="4" sz="4">
-					<TEXT label=" 1. Colocar tapas en el 'Slide' (máximo 10) " rgba="ffffffff" backrgba="0091DCff"/>
+					<TEXT label=" 1. Colocar tapas en el 'Slide' (máximo 6) " rgba="ffffffff" backrgba="0091DCff"/>
 				</NODE>	
 				<NODE view="SetupStep1" ty="-45">
 					<NODE view="SetupStep1" tx="10" sx="15" sy="15" sz="15">
@@ -287,7 +287,7 @@
 				<MODEL file="plane.obj" texture="Panel.png"/>
 			</NODE>			
 			<NODE view="SetupStep6" tx="20" tz="75" rx="135" sx="4" sy="4" sz="4">
-				<TEXT label=" ¿Se presionó el botón 'STOP'? " rgba="0091DCff" backrgba="ffffffff"/>
+				<TEXT label=" ¿Se presionó el botón 'START'? " rgba="0091DCff" backrgba="ffffffff"/>
 			</NODE>
 		</NODE>
 
